@@ -73,6 +73,12 @@ jobs:
           test -s codex-version/data/generated/topic_summary.json
           test -s codex-version/data/generated/alerts.json
 
+      - name: Validate generated data
+        run: python codex-version/scripts/validate_generated_data.py
+
+      - name: Validate dashboard paths
+        run: python codex-version/scripts/validate_dashboard_paths.py
+
       - name: Ensure nojekyll
         run: touch codex-version/.nojekyll
 

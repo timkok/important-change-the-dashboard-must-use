@@ -10,10 +10,10 @@
   },
   {
     "source": "dailypolitical.com",
-    "mentions": 17,
+    "mentions": 18,
     "sourceTier": "Other",
     "channel": "News",
-    "reach": 1700000,
+    "reach": 1800000,
     "engagement": 0,
     "isProxyMetrics": true
   },
@@ -28,10 +28,10 @@
   },
   {
     "source": "dailymail.com",
-    "mentions": 10,
+    "mentions": 11,
     "sourceTier": "Other",
     "channel": "News",
-    "reach": 1000000,
+    "reach": 1100000,
     "engagement": 0,
     "isProxyMetrics": true
   },
@@ -50,6 +50,15 @@
     "sourceTier": "Other",
     "channel": "News",
     "reach": 900000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "economictimes.indiatimes.com",
+    "mentions": 7,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 700000,
     "engagement": 0,
     "isProxyMetrics": true
   },
@@ -90,6 +99,15 @@
     "isProxyMetrics": true
   },
   {
+    "source": "manilatimes.net",
+    "mentions": 4,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 400000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
     "source": "el-balad.com",
     "mentions": 4,
     "sourceTier": "Other",
@@ -100,15 +118,6 @@
   },
   {
     "source": "marketscreener.com",
-    "mentions": 4,
-    "sourceTier": "Other",
-    "channel": "News",
-    "reach": 400000,
-    "engagement": 0,
-    "isProxyMetrics": true
-  },
-  {
-    "source": "economictimes.indiatimes.com",
     "mentions": 4,
     "sourceTier": "Other",
     "channel": "News",
@@ -135,11 +144,56 @@
     "isProxyMetrics": true
   },
   {
+    "source": "finanznachrichten.de",
+    "mentions": 3,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 300000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "investegate.co.uk",
+    "mentions": 3,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 300000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "businesstoday.in",
+    "mentions": 3,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 300000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "moneycontrol.com",
+    "mentions": 3,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 300000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
     "source": "biopharmadive.com",
     "mentions": 3,
     "sourceTier": "Trade",
     "channel": "Trade Media",
     "reach": 750000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "montrealgazette.com",
+    "mentions": 3,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 300000,
     "engagement": 0,
     "isProxyMetrics": true
   },
@@ -171,6 +225,15 @@
     "isProxyMetrics": true
   },
   {
+    "source": "rttnews.com",
+    "mentions": 2,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 200000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
     "source": "indianexpress.com",
     "mentions": 2,
     "sourceTier": "Other",
@@ -189,7 +252,7 @@
     "isProxyMetrics": true
   },
   {
-    "source": "scientificamerican.com",
+    "source": "parrysound.com",
     "mentions": 2,
     "sourceTier": "Other",
     "channel": "News",
@@ -198,7 +261,34 @@
     "isProxyMetrics": true
   },
   {
-    "source": "finanznachrichten.de",
+    "source": "niagarathisweek.com",
+    "mentions": 2,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 200000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "cphpost.dk",
+    "mentions": 2,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 200000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "kristeligt-dagblad.dk",
+    "mentions": 2,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 200000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "scientificamerican.com",
     "mentions": 2,
     "sourceTier": "Other",
     "channel": "News",
@@ -235,15 +325,6 @@
   },
   {
     "source": "miragenews.com",
-    "mentions": 2,
-    "sourceTier": "Other",
-    "channel": "News",
-    "reach": 200000,
-    "engagement": 0,
-    "isProxyMetrics": true
-  },
-  {
-    "source": "manilatimes.net",
     "mentions": 2,
     "sourceTier": "Other",
     "channel": "News",
@@ -324,6 +405,33 @@
     "isProxyMetrics": true
   },
   {
+    "source": "finanzen.ch",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "muskokaregion.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "northumberlandnews.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
     "source": "proactiveinvestors.com",
     "mentions": 1,
     "sourceTier": "Other",
@@ -370,6 +478,96 @@
   },
   {
     "source": "bioworld.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "orangeville.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "afr.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "thetimes.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "wcnc.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "houstonseagle.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "bt.dk",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "nationalpost.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "northcountrynow.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "torontosun.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "ottawasun.com",
     "mentions": 1,
     "sourceTier": "Other",
     "channel": "News",
@@ -432,15 +630,6 @@
     "isProxyMetrics": true
   },
   {
-    "source": "businesstoday.in",
-    "mentions": 1,
-    "sourceTier": "Other",
-    "channel": "News",
-    "reach": 100000,
-    "engagement": 0,
-    "isProxyMetrics": true
-  },
-  {
     "source": "nbcdfw.com",
     "mentions": 1,
     "sourceTier": "Other",
@@ -486,6 +675,123 @@
     "isProxyMetrics": true
   },
   {
+    "source": "calgarysun.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "journals.plos.org",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "suncommercial.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "bryantimes.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "vegnews.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "thehindubusinessline.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "thelocal.dk",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "vietnamtribune.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "singaporestar.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "australiannews.net",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "philippinetimes.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "asiabulletin.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "sydneysun.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
     "source": "legalnewsline.com",
     "mentions": 1,
     "sourceTier": "Other",
@@ -495,7 +801,61 @@
     "isProxyMetrics": true
   },
   {
-    "source": "investegate.co.uk",
+    "source": "ckom.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "wellandtribune.ca",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "thepeterboroughexaminer.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "lethbridgeherald.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "wjla.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "ibtimes.com.au",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "naturalnews.com",
     "mentions": 1,
     "sourceTier": "Other",
     "channel": "News",
@@ -558,7 +918,25 @@
     "isProxyMetrics": true
   },
   {
-    "source": "kristeligt-dagblad.dk",
+    "source": "wypr.org",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "brobible.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "usmagazine.com",
     "mentions": 1,
     "sourceTier": "Other",
     "channel": "News",
@@ -630,15 +1008,6 @@
     "isProxyMetrics": true
   },
   {
-    "source": "niagarathisweek.com",
-    "mentions": 1,
-    "sourceTier": "Other",
-    "channel": "News",
-    "reach": 100000,
-    "engagement": 0,
-    "isProxyMetrics": true
-  },
-  {
     "source": "durhamregion.com",
     "mentions": 1,
     "sourceTier": "Other",
@@ -666,25 +1035,7 @@
     "isProxyMetrics": true
   },
   {
-    "source": "parrysound.com",
-    "mentions": 1,
-    "sourceTier": "Other",
-    "channel": "News",
-    "reach": 100000,
-    "engagement": 0,
-    "isProxyMetrics": true
-  },
-  {
     "source": "ibtimes.co.uk",
-    "mentions": 1,
-    "sourceTier": "Other",
-    "channel": "News",
-    "reach": 100000,
-    "engagement": 0,
-    "isProxyMetrics": true
-  },
-  {
-    "source": "montrealgazette.com",
     "mentions": 1,
     "sourceTier": "Other",
     "channel": "News",
@@ -757,15 +1108,6 @@
   },
   {
     "source": "1057thepoint.com",
-    "mentions": 1,
-    "sourceTier": "Other",
-    "channel": "News",
-    "reach": 100000,
-    "engagement": 0,
-    "isProxyMetrics": true
-  },
-  {
-    "source": "cphpost.dk",
     "mentions": 1,
     "sourceTier": "Other",
     "channel": "News",
@@ -1009,15 +1351,6 @@
   },
   {
     "source": "wbiw.com",
-    "mentions": 1,
-    "sourceTier": "Other",
-    "channel": "News",
-    "reach": 100000,
-    "engagement": 0,
-    "isProxyMetrics": true
-  },
-  {
-    "source": "rttnews.com",
     "mentions": 1,
     "sourceTier": "Other",
     "channel": "News",

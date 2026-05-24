@@ -1,15 +1,15 @@
 [
   {
-    "level": "warning",
-    "company": "All",
-    "title": "Data quality warning",
-    "message": "GDELT returned zero new records; preserved existing healthy generated dataset."
-  },
-  {
     "level": "info",
     "company": "Eli Lilly",
     "title": "High coverage: Other",
     "message": "61 mentions in the current window."
+  },
+  {
+    "level": "info",
+    "company": "Novo Nordisk",
+    "title": "High coverage: GLP-1 market competition",
+    "message": "39 mentions in the current window."
   },
   {
     "level": "info",
@@ -26,8 +26,8 @@
   {
     "level": "info",
     "company": "Novo Nordisk",
-    "title": "High coverage: GLP-1 market competition",
-    "message": "22 mentions in the current window."
+    "title": "High coverage: Legal / regulatory",
+    "message": "24 mentions in the current window."
   },
   {
     "level": "info",
@@ -43,14 +43,8 @@
   },
   {
     "level": "info",
-    "company": "Eli Lilly",
-    "title": "High coverage: Drug pricing / insurance / access",
-    "message": "12 mentions in the current window."
-  },
-  {
-    "level": "info",
     "company": "Novo Nordisk",
-    "title": "High coverage: Legal / regulatory",
-    "message": "12 mentions in the current window."
+    "title": "High coverage: Other",
+    "message": "13 mentions in the current window."
   }
 ]

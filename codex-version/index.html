@@ -15,10 +15,14 @@
       </div>
       <nav class="tabs" aria-label="Dashboard sections">
         <button class="tab active" data-tab="overview">Overview</button>
+        <button class="tab" data-tab="insights">Insights</button>
         <button class="tab" data-tab="topics">Topics</button>
         <button class="tab" data-tab="sources">Sources</button>
+        <button class="tab" data-tab="entities">Entities</button>
+        <button class="tab" data-tab="risk">Risk</button>
         <button class="tab" data-tab="mentions">Articles</button>
         <button class="tab" data-tab="quality">Data Quality</button>
+        <button class="tab" data-tab="methodology">Methodology</button>
       </nav>
     </header>
 
@@ -29,6 +33,39 @@
       </section>
 
       <section id="app">
+        <section class="freshness-banner" aria-label="Latest run and data freshness">
+          <div>
+            <span>Records</span>
+            <strong id="bannerRecordCount">--</strong>
+          </div>
+          <div>
+            <span>Last updated</span>
+            <strong id="bannerLastUpdated">--</strong>
+          </div>
+          <div>
+            <span>Coverage</span>
+            <strong id="bannerCoverage">--</strong>
+          </div>
+          <div>
+            <span>Fetch mode</span>
+            <strong id="bannerFetchMode">--</strong>
+          </div>
+          <div>
+            <span>Previous / new / final</span>
+            <strong id="bannerRunCounts">--</strong>
+          </div>
+          <div>
+            <span>Warnings</span>
+            <strong id="bannerWarnings">--</strong>
+          </div>
+          <div>
+            <span>Preserved existing</span>
+            <strong id="bannerPreserved">--</strong>
+          </div>
+          <a href="./data/generated/metadata.json" target="_blank" rel="noopener noreferrer">metadata.json</a>
+        </section>
+        <p id="cacheNote" class="cache-note" hidden>Metadata may be older than the latest workflow run or browser cache. Try a hard refresh or add a cache-busting query string.</p>
+
         <section class="filters" aria-label="Filters">
           <select id="companyFilter" aria-label="Company">
             <option value="All">All companies</option>
@@ -58,7 +95,10 @@
             <option value="reach">Sort by reach</option>
             <option value="topic">Sort by topic</option>
           </select>
+          <input id="startDateFilter" type="date" aria-label="Start date">
+          <input id="endDateFilter" type="date" aria-label="End date">
           <input id="searchInput" type="search" placeholder="Search title, snippet, source, topic, keywords" aria-label="Search mentions">
+          <label class="check-filter"><input id="qualityNotesFilter" type="checkbox"> Data-quality notes only</label>
         </section>
 
         <section class="quick-filters" aria-label="Quick filters">
@@ -68,6 +108,8 @@
           <button type="button" class="quick-filter" data-filter="pricing">Pricing/access topic</button>
           <button type="button" class="quick-filter" data-filter="pipeline">Pipeline topic</button>
           <button type="button" class="quick-filter" data-filter="supply">Supply shortage topic</button>
+          <button type="button" class="quick-filter saved-filter" data-filter="novoRisk">Novo risk watch</button>
+          <button type="button" class="quick-filter saved-filter" data-filter="lillyTier1">Lilly Tier 1 watch</button>
           <button type="button" id="clearFilters">Clear filters</button>
         </section>
 
@@ -97,16 +139,33 @@
 
           <section class="grid">
             <article class="panel wide">
-              <div class="panel-heading"><h2>90-Day Mention Trend</h2><span>Generated counts</span></div>
-              <div id="timelineChart" class="timeline-chart" role="img" aria-label="Daily mention trend"></div>
+              <div class="panel-heading"><h2>Mentions Over Time</h2><span>Novo vs Lilly</span></div>
+              <div id="timelineChart" class="svg-chart" role="img" aria-label="Daily mention trend by company"></div>
             </article>
             <article class="panel">
-              <div class="panel-heading"><h2>Topic Summary</h2><span>Rule-based buckets</span></div>
-              <div id="topicChart" class="bar-list"></div>
+              <div class="panel-heading"><h2>Share of Voice Over Time</h2><span>Stacked daily share</span></div>
+              <div id="sovChart" class="svg-chart small-chart" role="img" aria-label="Share of voice over time"></div>
             </article>
             <article class="panel">
-              <div class="panel-heading"><h2>Source Summary</h2><span>Deduplicated</span></div>
-              <div id="sourceSummary" class="stack"></div>
+              <div class="panel-heading"><h2>Sentiment Distribution</h2><span>By company</span></div>
+              <div id="sentimentChart" class="bar-list"></div>
+            </article>
+            <article class="panel">
+              <div class="panel-heading"><h2>Product / Entity Mentions</h2><span>Matched keywords</span></div>
+              <div id="entityBarChart" class="bar-list"></div>
+            </article>
+          </section>
+        </section>
+
+        <section class="tab-panel" data-panel="insights" hidden>
+          <section class="grid">
+            <article class="panel wide">
+              <div class="panel-heading"><h2>Rule-Based Narrative Insights</h2><span>No LLM calls</span></div>
+              <div id="insightsPanel" class="insight-list"></div>
+            </article>
+            <article class="panel">
+              <div class="panel-heading"><h2>Notable Articles</h2><span>Authority + recency</span></div>
+              <div id="notableArticles" class="stack"></div>
             </article>
           </section>
         </section>
@@ -114,8 +173,8 @@
         <section class="tab-panel" data-panel="topics" hidden>
           <section class="grid">
             <article class="panel">
-              <div class="panel-heading"><h2>Topic x Company Matrix</h2><span>Mentions by company</span></div>
-              <div id="topicMatrix" class="matrix"></div>
+              <div class="panel-heading"><h2>Topic x Company Heatmap</h2><span>Mentions by company</span></div>
+              <div id="topicHeatmap" class="heatmap"></div>
             </article>
             <article class="panel wide">
               <div class="panel-heading"><h2>Sortable Topic Table</h2><span id="topicTableCount">0 topics</span></div>
@@ -160,7 +219,44 @@
             </article>
             <article class="panel">
               <div class="panel-heading"><h2>Source Tier Split</h2><span>Current filters</span></div>
-              <div id="tierSplit" class="bar-list"></div>
+              <div id="tierSplit" class="svg-chart small-chart"></div>
+            </article>
+          </section>
+        </section>
+
+        <section class="tab-panel" data-panel="entities" hidden>
+          <section class="grid">
+            <article class="panel wide">
+              <div class="panel-heading"><h2>Product / Entity Analysis</h2><span>Novo and Lilly product families</span></div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Entity</th>
+                      <th>Company family</th>
+                      <th>Mentions</th>
+                      <th>Sentiment</th>
+                      <th>Top topic</th>
+                      <th>Source tier split</th>
+                      <th>Latest article</th>
+                    </tr>
+                  </thead>
+                  <tbody id="entityTable"></tbody>
+                </table>
+              </div>
+            </article>
+          </section>
+        </section>
+
+        <section class="tab-panel" data-panel="risk" hidden>
+          <section class="grid">
+            <article class="panel wide">
+              <div class="panel-heading"><h2>Risk Monitor</h2><span>Safety, access, legal, supply, compounded GLP-1s</span></div>
+              <div id="riskCards" class="risk-grid"></div>
+            </article>
+            <article class="panel">
+              <div class="panel-heading"><h2>Risk Score Formula</h2><span>Transparent scoring</span></div>
+              <p class="muted">riskScore = total mentions + negative sentiment count x 2 + Tier 1 count x 1.5 + highest sourceAuthority / 25. This is a prioritization signal, not a causal or clinical risk estimate.</p>
             </article>
           </section>
         </section>
@@ -170,6 +266,7 @@
             <div class="panel-heading"><h2>Real Article Mentions</h2><span id="visibleCount">0 records</span></div>
             <div class="table-actions">
               <button type="button" id="exportCsv">Export filtered CSV</button>
+              <button type="button" id="exportJson">Export filtered JSON</button>
             </div>
             <div class="table-wrap">
               <table>
@@ -187,6 +284,11 @@
                 </thead>
                 <tbody id="mentionsTable"></tbody>
               </table>
+            </div>
+            <div class="pagination">
+              <button type="button" id="prevPage">Previous</button>
+              <span id="pageStatus">Page 1</span>
+              <button type="button" id="nextPage">Next</button>
             </div>
           </article>
           <aside id="articleDrawer" class="drawer" hidden aria-live="polite"></aside>
@@ -226,6 +328,35 @@
             <article class="panel">
               <div class="panel-heading"><h2>Alerts</h2><span>Generated</span></div>
               <div id="alerts" class="stack"></div>
+            </article>
+          </section>
+        </section>
+
+        <section class="tab-panel" data-panel="methodology" hidden>
+          <section class="quality-grid">
+            <article class="panel">
+              <div class="panel-heading"><h2>What This Measures</h2><span>GDELT baseline</span></div>
+              <p>GDELT is used to collect public web news coverage matching Novo Nordisk, Eli Lilly, and GLP-1 product or molecule terms. It provides article metadata that can support media-exposure monitoring.</p>
+              <p class="muted">GDELT does not cover every paid database, broadcast clip, social post, paywalled impression, or paid social-listening export. It should be treated as an auditable public-media baseline.</p>
+            </article>
+            <article class="panel">
+              <div class="panel-heading"><h2>Metrics</h2><span>Plain-English formulas</span></div>
+              <ul class="list">
+                <li>Share of voice = company mentions / total mentions.</li>
+                <li>Weighted SOV uses weightedExposure = 1 + normalizedReach x 0.35 + normalizedEngagement x 0.25 + normalizedSourceAuthority x 0.25 + recencyWeight x 0.15.</li>
+                <li>Sentiment score = (positive mentions - negative mentions) / total mentions.</li>
+                <li>Reach, engagement, and sourceAuthority are proxies for GDELT records. Engagement is 0 unless imported from CSV or paid tools.</li>
+              </ul>
+            </article>
+            <article class="panel">
+              <div class="panel-heading"><h2>Classification</h2><span>Rules, not LLMs</span></div>
+              <p>Topic classification uses keyword rules in the Python normalization pipeline. Standalone Novo/Lilly terms require GLP-1, obesity, diabetes, or pharma context to reduce false positives.</p>
+              <p>Deduplication uses normalized URL first, then title + date + sourceDomain when URL is missing.</p>
+            </article>
+            <article class="panel">
+              <div class="panel-heading"><h2>Updates and Imports</h2><span>Preserve good data</span></div>
+              <p>Scheduled runs are incremental: the pipeline loads existing generated records, fetches only recent GDELT windows, merges, deduplicates, keeps a rolling 90-day window, and preserves old data if a new fetch fails.</p>
+              <p>Meltwater, Brandwatch, Talkwalker, or similar exports can be added later by dropping CSV files into <code>codex-version/data/imports/</code> using the documented columns.</p>
             </article>
           </section>
         </section>

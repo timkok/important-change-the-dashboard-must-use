@@ -209,6 +209,215 @@
     ]
   },
   {
+    "id": "9d1e66a2d366407d0fff3f3b",
+    "date": "2026-05-23",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Novo Nordisk",
+    "channel": "News",
+    "source": "finanznachrichten.de",
+    "sourceDomain": "finanznachrichten.de",
+    "sourceTier": "Other",
+    "title": "CHMP Issues Positive Opinion On Novo Nordisk Wegovy 7 . 2 Mg For Obesity",
+    "snippet": "",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-05/68580039-chmp-issues-positive-opinion-on-novo-nordisk-s-wegovy-7-2-mg-for-obesity-020.htm",
+    "topic": "Weight loss efficacy",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Novo Nordisk",
+      "Wegovy",
+      "Novo"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "6210eec58133af81c9d67935",
+    "date": "2026-05-23",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Novo Nordisk",
+    "channel": "News",
+    "source": "rttnews.com",
+    "sourceDomain": "rttnews.com",
+    "sourceTier": "Other",
+    "title": "CHMP Issues Positive Opinion On Novo Nordisk Wegovy 7 . 2 Mg For Obesity",
+    "snippet": "",
+    "url": "https://www.rttnews.com/3654932/chmp-issues-positive-opinion-on-novo-nordisk-s-wegovy-7-2-mg-for-obesity.aspx",
+    "topic": "Weight loss efficacy",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Novo Nordisk",
+      "Wegovy",
+      "Novo"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "12ce76c34bdb77d5341bf297",
+    "date": "2026-05-23",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Novo Nordisk",
+    "channel": "News",
+    "source": "finanzen.ch",
+    "sourceDomain": "finanzen.ch",
+    "sourceTier": "Other",
+    "title": "CHMP Issues Positive Opinion On Novo Nordisk Wegovy 7 . 2 Mg For Obesity",
+    "snippet": "",
+    "url": "https://www.finanzen.ch/nachrichten/aktien/chmp-issues-positive-opinion-on-novo-nordisks-wegovy-7-2-mg-for-obesity-1036190073",
+    "topic": "Weight loss efficacy",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Novo Nordisk",
+      "Wegovy",
+      "Novo"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "466e7d948bfb3965bb8fa680",
+    "date": "2026-05-23",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Novo Nordisk",
+    "channel": "News",
+    "source": "economictimes.indiatimes.com",
+    "sourceDomain": "economictimes.indiatimes.com",
+    "sourceTier": "Other",
+    "title": "Novo Nordisk uses AI to fast - track drug launches , expand India role",
+    "snippet": "",
+    "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/novo-nordisk-uses-ai-to-fast-track-drug-launches-expand-india-role/articleshow/131278271.cms",
+    "topic": "Other",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Novo Nordisk"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "71184e158d3470f35c903005",
+    "date": "2026-05-23",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Novo Nordisk",
+    "channel": "News",
+    "source": "dailypolitical.com",
+    "sourceDomain": "dailypolitical.com",
+    "sourceTier": "Other",
+    "title": "Novo Nordisk A / S $NVO Shares Purchased by Markel Group Inc . ",
+    "snippet": "",
+    "url": "https://www.dailypolitical.com/2026/05/23/novo-nordisk-a-s-nvo-shares-purchased-by-markel-group-inc.html",
+    "topic": "Other",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Novo Nordisk"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "3e08f73a43e73809893cdb24",
+    "date": "2026-05-23",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "muskokaregion.com",
+    "sourceDomain": "muskokaregion.com",
+    "sourceTier": "Other",
+    "title": "Digital prescriptions for generic Ozempic ready in Ontario",
+    "snippet": "",
+    "url": "https://www.muskokaregion.com/news/ontario-generic-ozempic-apotex-digital-prescriptions/article_2187ad4c-bde5-5988-a6b4-15e77e0ec997.html",
+    "topic": "GLP-1 market competition",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "ce056724eb4921cb8d044482",
+    "date": "2026-05-23",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "northumberlandnews.com",
+    "sourceDomain": "northumberlandnews.com",
+    "sourceTier": "Other",
+    "title": "Digital prescriptions for generic Ozempic ready in Ontario",
+    "snippet": "",
+    "url": "https://www.northumberlandnews.com/news/ontario-generic-ozempic-apotex-digital-prescriptions/article_bc0c41f0-03f8-5ee0-b3e7-9b9598021fde.html",
+    "topic": "GLP-1 market competition",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
     "id": "006db82f0b2e542517500abe",
     "date": "2026-05-22",
     "company": "Eli Lilly",
@@ -557,6 +766,630 @@
     "matchedKeywords": [
       "Eli Lilly",
       "Lilly"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "b46084247770d2f8e1c285fa",
+    "date": "2026-05-22",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "parrysound.com",
+    "sourceDomain": "parrysound.com",
+    "sourceTier": "Other",
+    "title": "Digital prescriptions for generic Ozempic ready in Ontario",
+    "snippet": "",
+    "url": "https://www.parrysound.com/news/ontario-generic-ozempic-apotex-digital-prescriptions/article_07c2b86f-7442-5e1a-bfab-5fe5a116c851.html",
+    "topic": "GLP-1 market competition",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "feed106b0147bad033b36a63",
+    "date": "2026-05-22",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "niagarathisweek.com",
+    "sourceDomain": "niagarathisweek.com",
+    "sourceTier": "Other",
+    "title": "Digital prescriptions for generic Ozempic ready in Ontario",
+    "snippet": "",
+    "url": "https://www.niagarathisweek.com/news/ontario-generic-ozempic-apotex-digital-prescriptions/article_03349d14-7e61-5b7a-9968-a1dfbc97aab8.html",
+    "topic": "GLP-1 market competition",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "39761eb6daa27c6bb635d98d",
+    "date": "2026-05-22",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "orangeville.com",
+    "sourceDomain": "orangeville.com",
+    "sourceTier": "Other",
+    "title": "Digital prescriptions for generic Ozempic ready in Ontario",
+    "snippet": "",
+    "url": "https://www.orangeville.com/news/ontario-generic-ozempic-apotex-digital-prescriptions/article_89bd77a2-40b8-5e81-9309-6ffd10f56096.html",
+    "topic": "GLP-1 market competition",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "3c2022715e53fd20b0e3cdaa",
+    "date": "2026-05-22",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Novo Nordisk",
+    "channel": "News",
+    "source": "afr.com",
+    "sourceDomain": "afr.com",
+    "sourceTier": "Other",
+    "title": "Ozempic maker Novo Nordisk accused of using sales bonuses to push off - label use",
+    "snippet": "",
+    "url": "https://www.afr.com/companies/healthcare-and-fitness/ozempic-maker-accused-of-using-sales-bonuses-to-push-off-label-use-20260520-p5zz1d",
+    "topic": "Earnings / revenue / market share",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Novo Nordisk",
+      "Ozempic",
+      "Novo"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "81787e0e450aaccce6224f6b",
+    "date": "2026-05-22",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Novo Nordisk",
+    "channel": "News",
+    "source": "manilatimes.net",
+    "sourceDomain": "manilatimes.net",
+    "sourceTier": "Other",
+    "title": "Novo Nordisk A / S : CHMP recommends EU approval of Wegovy® 7 . 2 mg in a single - dose pen , providing up to 20 . 7 % mean weight loss ( 1 ) ",
+    "snippet": "",
+    "url": "https://www.manilatimes.net/2026/05/23/tmt-newswire/globenewswire/novo-nordisk-as-chmp-recommends-eu-approval-of-wegovy-72-mg-in-a-single-dose-pen-providing-up-to-207-mean-weight-loss-1/2350299",
+    "topic": "Legal / regulatory",
+    "sentiment": "Positive",
+    "sentimentScore": 0.45,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Novo Nordisk",
+      "Wegovy",
+      "Novo"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "9acc828e49dba71a43f462d6",
+    "date": "2026-05-22",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Novo Nordisk",
+    "channel": "News",
+    "source": "investegate.co.uk",
+    "sourceDomain": "investegate.co.uk",
+    "sourceTier": "Other",
+    "title": "Novo Nordisk A / S : CHMP recommends EU approval of Wegovy® 7 . 2 mg in a single - dose pen , providing up to 20 . 7 % mean weight loss ( 1 ) | Company Announcement",
+    "snippet": "",
+    "url": "https://www.investegate.co.uk/announcement/gnw/novo-nordisk-a-s-class-b--0qiu/novo-nordisk-a-s-chmp-recommends-eu-approval-/9583337",
+    "topic": "Legal / regulatory",
+    "sentiment": "Positive",
+    "sentimentScore": 0.45,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Novo Nordisk",
+      "Wegovy",
+      "Novo"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "625cf2b34358ff48e55a4f31",
+    "date": "2026-05-22",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "thetimes.com",
+    "sourceDomain": "thetimes.com",
+    "sourceTier": "Other",
+    "title": "Meet Reta , the  Godzilla  fat jab making Ozempic look lightweight",
+    "snippet": "",
+    "url": "https://www.thetimes.com/uk/healthcare/article/reta-retatrutide-weight-loss-what-is-it-lkmmnkc2b",
+    "topic": "GLP-1 market competition",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "edbb7319f4efa108effaca71",
+    "date": "2026-05-22",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "wcnc.com",
+    "sourceDomain": "wcnc.com",
+    "sourceTier": "Other",
+    "title": "Doctors explore  Ozempic personality  as some patients report feeling emotionally flat",
+    "snippet": "",
+    "url": "https://www.wcnc.com/article/news/local/connect-the-dots/ozempic-personality-connect-the-dots/275-e2428e2e-7bf3-4f47-ae29-120fe077c0a6",
+    "topic": "GLP-1 market competition",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "d2fb572200dec03c564dbeea",
+    "date": "2026-05-22",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Wegovy",
+    "channel": "News",
+    "source": "cphpost.dk",
+    "sourceDomain": "cphpost.dk",
+    "sourceTier": "Other",
+    "title": "EU medicines agency recommends approval of Wegovy weight - loss pill in Europe",
+    "snippet": "",
+    "url": "https://cphpost.dk/2026-05-22/news/round-up/eu-medicines-agency-recommends-approval-of-wegovy-weight-loss-pill-in-europe/",
+    "topic": "Oral GLP-1",
+    "sentiment": "Positive",
+    "sentimentScore": 0.45,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Wegovy"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "2a1a9c7e003fa1aba101dcdf",
+    "date": "2026-05-22",
+    "company": "Novo Nordisk",
+    "matchedEntity": "semaglutide",
+    "channel": "News",
+    "source": "businesstoday.in",
+    "sourceDomain": "businesstoday.in",
+    "sourceTier": "Other",
+    "title": "How semaglutide is helping Torrent Pharmaceuticals to strengthen its business",
+    "snippet": "",
+    "url": "https://www.businesstoday.in/latest/corporate/story/how-semaglutide-is-helping-torrent-pharmaceuticals-to-strengthen-its-business-532944-2026-05-22",
+    "topic": "Legal / regulatory",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "semaglutide"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "1cb2d60ddc8f27be2b1b04d7",
+    "date": "2026-05-22",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "houstonseagle.com",
+    "sourceDomain": "houstonseagle.com",
+    "sourceTier": "Other",
+    "title": "Ozempic Personality Is A Thing",
+    "snippet": "",
+    "url": "https://houstonseagle.com/1736962/ozempic-personality-is-a-thing/",
+    "topic": "GLP-1 market competition",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "936461b270a6d6b9a140ee1c",
+    "date": "2026-05-22",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Novo Nordisk",
+    "channel": "News",
+    "source": "manilatimes.net",
+    "sourceDomain": "manilatimes.net",
+    "sourceTier": "Other",
+    "title": "Novo Nordisk A / S : Wegovy® pill ( oral semaglutide ) recommended by CHMP for approval in the EU as the first oral GLP - 1 representing the most efficacious oral obesity treatment in its class",
+    "snippet": "",
+    "url": "https://www.manilatimes.net/2026/05/22/tmt-newswire/globenewswire/novo-nordisk-as-wegovy-pill-oral-semaglutide-recommended-by-chmp-for-approval-in-the-eu-as-the-first-oral-glp-1-representing-the-most-efficacious-oral-obesity-treatment-in-its-class/2350104",
+    "topic": "Oral GLP-1",
+    "sentiment": "Positive",
+    "sentimentScore": 0.45,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Novo Nordisk",
+      "Wegovy",
+      "semaglutide",
+      "oral semaglutide",
+      "Novo"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "ec8c054d03a36a49d2fdef6b",
+    "date": "2026-05-22",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Novo Nordisk",
+    "channel": "News",
+    "source": "investegate.co.uk",
+    "sourceDomain": "investegate.co.uk",
+    "sourceTier": "Other",
+    "title": "Novo Nordisk A / S : Wegovy® pill ( oral semaglutide ) recommended by CHMP for approval in the EU as the first oral GLP - 1 representing the most efficacious oral obesity treatment in its class | Company Announcement",
+    "snippet": "",
+    "url": "https://www.investegate.co.uk/announcement/gnw/novo-nordisk-a-s-class-b--0qiu/novo-nordisk-a-s-wegovy-pill-oral-semaglut-/9583015",
+    "topic": "Oral GLP-1",
+    "sentiment": "Positive",
+    "sentimentScore": 0.45,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Novo Nordisk",
+      "Wegovy",
+      "semaglutide",
+      "oral semaglutide",
+      "Novo"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "1263ede2e73ed322e476a686",
+    "date": "2026-05-22",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Wegovy",
+    "channel": "News",
+    "source": "kristeligt-dagblad.dk",
+    "sourceDomain": "kristeligt-dagblad.dk",
+    "sourceTier": "Other",
+    "title": "EU lægemiddelagentur anbefaler godkendelse af Wegovy - pille",
+    "snippet": "",
+    "url": "https://www.kristeligt-dagblad.dk/eus-laegemiddelagentur-anbefaler-godkendelse-af-wegovy-pille",
+    "topic": "Oral GLP-1",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Wegovy"
+    ],
+    "rawSource": "GDELT",
+    "language": "Danish",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "bc884ec91b5bc3d864323d09",
+    "date": "2026-05-22",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Wegovy",
+    "channel": "News",
+    "source": "bt.dk",
+    "sourceDomain": "bt.dk",
+    "sourceTier": "Other",
+    "title": "EU lægemiddelagentur anbefaler godkendelse af Wegovy - pille",
+    "snippet": "",
+    "url": "https://www.bt.dk/erhverv/eus-laegemiddelagentur-anbefaler-godkendelse-af-wegovy-pille",
+    "topic": "Oral GLP-1",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Wegovy"
+    ],
+    "rawSource": "GDELT",
+    "language": "Danish",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "c8c949ad9eb60cd28a0950c9",
+    "date": "2026-05-22",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "economictimes.indiatimes.com",
+    "sourceDomain": "economictimes.indiatimes.com",
+    "sourceTier": "Other",
+    "title": "Why are Indians suddenly buying more vitamins after starting Ozempic - like weight loss drugs ? ",
+    "snippet": "",
+    "url": "https://economictimes.indiatimes.com/news/new-updates/why-are-indians-suddenly-buying-more-vitamins-after-starting-ozempic-like-weight-loss-drugs/articleshow/131262833.cms",
+    "topic": "Weight loss efficacy",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "dc99b32d5dcaf597be5f3508",
+    "date": "2026-05-22",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "nationalpost.com",
+    "sourceDomain": "nationalpost.com",
+    "sourceTier": "Other",
+    "title": "Colby Cosh : Did Ozempic kill its Canadian patent ? ",
+    "snippet": "",
+    "url": "https://nationalpost.com/opinion/colby-cosh-did-ozempic-kill-its-canadian-patent",
+    "topic": "GLP-1 market competition",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "ac8644084a008b17d63dec8c",
+    "date": "2026-05-22",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "northcountrynow.com",
+    "sourceDomain": "northcountrynow.com",
+    "sourceTier": "Other",
+    "title": "What Ozempic is doing to women hormones and why your doctor may not mention it",
+    "snippet": "",
+    "url": "http://northcountrynow.com/premium/stacker/stories/what-ozempic-is-doing-to-women039s-hormones-and-why-your-doctor-may-not-mention-it,371263",
+    "topic": "GLP-1 market competition",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "dc11d4c6c0cb63c24fea2252",
+    "date": "2026-05-22",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "moneycontrol.com",
+    "sourceDomain": "moneycontrol.com",
+    "sourceTier": "Other",
+    "title": "Ozempic effect ? Vitamin supplement sales jump after semaglutide launch in India",
+    "snippet": "",
+    "url": "https://www.moneycontrol.com/news/business/ozempic-effect-vitamin-supplement-sales-jump-after-semaglutide-launch-in-india-13927532.html",
+    "topic": "Earnings / revenue / market share",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic",
+      "semaglutide"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "593048dcf92aeca04cfa28c0",
+    "date": "2026-05-22",
+    "company": "Novo Nordisk",
+    "matchedEntity": "semaglutide",
+    "channel": "News",
+    "source": "torontosun.com",
+    "sourceDomain": "torontosun.com",
+    "sourceTier": "Other",
+    "title": "Felix Health offering generic semaglutide across Canada",
+    "snippet": "",
+    "url": "https://torontosun.com/health/diet-fitness/felix-health-offering-generic-semaglutide-canada",
+    "topic": "Legal / regulatory",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "semaglutide"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "0c0e78b4bfb673eca7643856",
+    "date": "2026-05-22",
+    "company": "Novo Nordisk",
+    "matchedEntity": "semaglutide",
+    "channel": "News",
+    "source": "ottawasun.com",
+    "sourceDomain": "ottawasun.com",
+    "sourceTier": "Other",
+    "title": "Felix Health offering generic semaglutide across Canada",
+    "snippet": "",
+    "url": "https://ottawasun.com/health/diet-fitness/felix-health-offering-generic-semaglutide-canada",
+    "topic": "Legal / regulatory",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "semaglutide"
     ],
     "rawSource": "GDELT",
     "language": "English",
@@ -1162,6 +1995,472 @@
     ]
   },
   {
+    "id": "b5c8caf630e216d1943384ed",
+    "date": "2026-05-21",
+    "company": "Novo Nordisk",
+    "matchedEntity": "semaglutide",
+    "channel": "News",
+    "source": "calgarysun.com",
+    "sourceDomain": "calgarysun.com",
+    "sourceTier": "Other",
+    "title": "Felix Health offering generic semaglutide across Canada",
+    "snippet": "",
+    "url": "https://calgarysun.com/health/diet-fitness/felix-health-offering-generic-semaglutide-canada",
+    "topic": "Legal / regulatory",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "semaglutide"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "29243dd6254a1ed493846ee0",
+    "date": "2026-05-21",
+    "company": "Novo Nordisk",
+    "matchedEntity": "semaglutide",
+    "channel": "News",
+    "source": "journals.plos.org",
+    "sourceDomain": "journals.plos.org",
+    "sourceTier": "Other",
+    "title": "Semaglutide - associated risk of nonarteritic anterior ischemic optic neuropathy in patients with type 2 diabetes : A systematic review and meta - analysis of observational studies",
+    "snippet": "",
+    "url": "https://journals.plos.org:443/plosmedicine/article?id=10.1371/journal.pmed.1005064",
+    "topic": "Side effects / safety",
+    "sentiment": "Negative",
+    "sentimentScore": -0.45,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "semaglutide"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "b6e26ded53658d4715677fe5",
+    "date": "2026-05-21",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "suncommercial.com",
+    "sourceDomain": "suncommercial.com",
+    "sourceTier": "Other",
+    "title": "What Ozempic is doing to women hormones and why your doctor may not mention it",
+    "snippet": "",
+    "url": "https://www.suncommercial.com/brazil_times/lifestyles/health/article_86d82d1d-ea32-5472-8fe1-cfada07fb800.html",
+    "topic": "GLP-1 market competition",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "3c5526d07f90d630aacea7fc",
+    "date": "2026-05-21",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "bryantimes.com",
+    "sourceDomain": "bryantimes.com",
+    "sourceTier": "Other",
+    "title": "What Ozempic is doing to women hormones and why your doctor may not mention it",
+    "snippet": "",
+    "url": "https://www.bryantimes.com/news/health/what-ozempic-is-doing-to-womens-hormones-and-why-your-doctor-may-not-mention-it/article_af3b0edf-c7a1-5b04-bc86-90336b1cd293.html",
+    "topic": "GLP-1 market competition",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "e28dd8c53bb47043974bb10a",
+    "date": "2026-05-21",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "vegnews.com",
+    "sourceDomain": "vegnews.com",
+    "sourceTier": "Other",
+    "title": "How Much Protein Do You Need on Ozempic ? Experts Explain for Vegans",
+    "snippet": "",
+    "url": "https://vegnews.com/best-high-protein-plant-based-while-on-ozempic",
+    "topic": "GLP-1 market competition",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "9138e808b22ba48041e9da02",
+    "date": "2026-05-21",
+    "company": "Novo Nordisk",
+    "matchedEntity": "semaglutide",
+    "channel": "News",
+    "source": "moneycontrol.com",
+    "sourceDomain": "moneycontrol.com",
+    "sourceTier": "Other",
+    "title": "Eris Lifesciences profit surges 173 % led by domestic business , FY27 growth to be driven by semaglutide , in - sourcing",
+    "snippet": "",
+    "url": "https://www.moneycontrol.com/news/business/earnings/eris-lifesciences-profit-surges-173-led-by-domestic-business-fy27-growth-to-be-driven-by-semaglutide-in-sourcing-13926998.html",
+    "topic": "Legal / regulatory",
+    "sentiment": "Positive",
+    "sentimentScore": 0.45,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "semaglutide"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "a27ca6d7a75b74e3fbc99eb6",
+    "date": "2026-05-21",
+    "company": "Novo Nordisk",
+    "matchedEntity": "semaglutide",
+    "channel": "News",
+    "source": "montrealgazette.com",
+    "sourceDomain": "montrealgazette.com",
+    "sourceTier": "Other",
+    "title": "Hims & Hers Brings First - Time Access to Generic Semaglutide to Canada",
+    "snippet": "",
+    "url": "https://montrealgazette.com/press-releases/business-wire/hims-hers-brings-first-time-access-to-generic-semaglutide-to-canada/",
+    "topic": "Drug pricing / insurance / access",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "semaglutide"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "9dc34f993bf055a4e734ed86",
+    "date": "2026-05-21",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Novo Nordisk",
+    "channel": "News",
+    "source": "thehindubusinessline.com",
+    "sourceDomain": "thehindubusinessline.com",
+    "sourceTier": "Other",
+    "title": "Novo Nordisk launches higher - dose Wegovy for those seeking greater weightloss",
+    "snippet": "",
+    "url": "https://www.thehindubusinessline.com/companies/novo-nordisk-launches-higher-dose-wegovy-for-those-seeking-greater-weightloss/article71005775.ece",
+    "topic": "GLP-1 market competition",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Novo Nordisk",
+      "Wegovy",
+      "Novo"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "7b592d8f2553b753938f47f6",
+    "date": "2026-05-21",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Novo Nordisk",
+    "channel": "News",
+    "source": "thelocal.dk",
+    "sourceDomain": "thelocal.dk",
+    "sourceTier": "Other",
+    "title": "Danish employment rate hits record - high despite Novo Nordisk layoffs",
+    "snippet": "",
+    "url": "https://www.thelocal.dk/20260521/danish-employment-rate-hits-record-high-despite-novo-nordisk-layoffs",
+    "topic": "Other",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Novo Nordisk"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "6c90b2f244df9fb842524969",
+    "date": "2026-05-21",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Novo Nordisk",
+    "channel": "News",
+    "source": "vietnamtribune.com",
+    "sourceDomain": "vietnamtribune.com",
+    "sourceTier": "Other",
+    "title": "Singapore Court of Appeal Notes No Finding of Fraud Against KBP or Dr . Huang ; Dispute with Novo Nordisk Undergoing Arbitration Proceedings",
+    "snippet": "",
+    "url": "http://www.vietnamtribune.com/news/279064905/singapore-court-of-appeal-notes-no-finding-of-fraud-against-kbp-or-dr-huang-dispute-with-novo-nordisk-undergoing-arbitration-proceedings",
+    "topic": "Other",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Novo Nordisk"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "abab9982cd96393130ae9f1a",
+    "date": "2026-05-21",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Novo Nordisk",
+    "channel": "News",
+    "source": "singaporestar.com",
+    "sourceDomain": "singaporestar.com",
+    "sourceTier": "Other",
+    "title": "Singapore Court of Appeal Notes No Finding of Fraud Against KBP or Dr . Huang ; Dispute with Novo Nordisk Undergoing Arbitration Proceedings",
+    "snippet": "",
+    "url": "http://www.singaporestar.com/news/279064905/singapore-court-of-appeal-notes-no-finding-of-fraud-against-kbp-or-dr-huang-dispute-with-novo-nordisk-undergoing-arbitration-proceedings",
+    "topic": "Other",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Novo Nordisk"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "7398d72f06a2e0e7e7a0fc48",
+    "date": "2026-05-21",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Novo Nordisk",
+    "channel": "News",
+    "source": "australiannews.net",
+    "sourceDomain": "australiannews.net",
+    "sourceTier": "Other",
+    "title": "Singapore Court of Appeal Notes No Finding of Fraud Against KBP or Dr . Huang ; Dispute with Novo Nordisk Undergoing Arbitration Proceedings",
+    "snippet": "",
+    "url": "http://www.australiannews.net/news/279064905/singapore-court-of-appeal-notes-no-finding-of-fraud-against-kbp-or-dr-huang-dispute-with-novo-nordisk-undergoing-arbitration-proceedings",
+    "topic": "Other",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Novo Nordisk"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "e854fd0459b5a0a27e03f104",
+    "date": "2026-05-21",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Novo Nordisk",
+    "channel": "News",
+    "source": "philippinetimes.com",
+    "sourceDomain": "philippinetimes.com",
+    "sourceTier": "Other",
+    "title": "Singapore Court of Appeal Notes No Finding of Fraud Against KBP or Dr . Huang ; Dispute with Novo Nordisk Undergoing Arbitration Proceedings",
+    "snippet": "",
+    "url": "http://www.philippinetimes.com/news/279064905/singapore-court-of-appeal-notes-no-finding-of-fraud-against-kbp-or-dr-huang-dispute-with-novo-nordisk-undergoing-arbitration-proceedings",
+    "topic": "Other",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Novo Nordisk"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "9a87a1c4ce47fa0cc64993f1",
+    "date": "2026-05-21",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Novo Nordisk",
+    "channel": "News",
+    "source": "asiabulletin.com",
+    "sourceDomain": "asiabulletin.com",
+    "sourceTier": "Other",
+    "title": "Singapore Court of Appeal Notes No Finding of Fraud Against KBP or Dr . Huang ; Dispute with Novo Nordisk Undergoing Arbitration Proceedings",
+    "snippet": "",
+    "url": "http://www.asiabulletin.com/news/279064905/singapore-court-of-appeal-notes-no-finding-of-fraud-against-kbp-or-dr-huang-dispute-with-novo-nordisk-undergoing-arbitration-proceedings",
+    "topic": "Other",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Novo Nordisk"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "4cea2f9b155a598048262c78",
+    "date": "2026-05-21",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Novo Nordisk",
+    "channel": "News",
+    "source": "sydneysun.com",
+    "sourceDomain": "sydneysun.com",
+    "sourceTier": "Other",
+    "title": "Singapore Court of Appeal Notes No Finding of Fraud Against KBP or Dr . Huang ; Dispute with Novo Nordisk Undergoing Arbitration Proceedings",
+    "snippet": "",
+    "url": "http://www.sydneysun.com/news/279064905/singapore-court-of-appeal-notes-no-finding-of-fraud-against-kbp-or-dr-huang-dispute-with-novo-nordisk-undergoing-arbitration-proceedings",
+    "topic": "Other",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Novo Nordisk"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "10c1d5ae256280f723c727ce",
+    "date": "2026-05-21",
+    "company": "Novo Nordisk",
+    "matchedEntity": "semaglutide",
+    "channel": "News",
+    "source": "montrealgazette.com",
+    "sourceDomain": "montrealgazette.com",
+    "sourceTier": "Other",
+    "title": "Phoenix and Raven Become First Canadian Telehealth Platforms to Offer Generic Semaglutide Direct to Patients",
+    "snippet": "",
+    "url": "https://montrealgazette.com/press-releases/business-wire/phoenix-and-raven-become-first-canadian-telehealth-platforms-to-offer-generic-semaglutide-direct-to-patients/",
+    "topic": "Legal / regulatory",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "semaglutide"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
     "id": "c7678ea6d515b4316f862d17",
     "date": "2026-05-20",
     "company": "Eli Lilly",
@@ -1181,6 +2480,331 @@
     "sourceAuthority": 45,
     "matchedKeywords": [
       "Eli Lilly"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "cfc4893300a6703439c4db01",
+    "date": "2026-05-20",
+    "company": "Novo Nordisk",
+    "matchedEntity": "semaglutide",
+    "channel": "News",
+    "source": "businesstoday.in",
+    "sourceDomain": "businesstoday.in",
+    "sourceTier": "Other",
+    "title": "Dr Reddy launches oral semaglutide tablets at ₹99 per pill in India",
+    "snippet": "",
+    "url": "https://www.businesstoday.in/industry/pharma/story/dr-reddys-launches-oral-semaglutide-tablets-at-rs99-per-pill-in-india-532551-2026-05-20",
+    "topic": "Oral GLP-1",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "semaglutide",
+      "oral semaglutide"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "f0b6a899afd826033eeefee2",
+    "date": "2026-05-20",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "ckom.com",
+    "sourceDomain": "ckom.com",
+    "sourceTier": "Other",
+    "title": "Generic semaglutide to hit Canadian pharmacies this week at a fraction of the cost of Ozempic",
+    "snippet": "",
+    "url": "https://www.ckom.com/2026/05/20/generic-semaglutide-to-hit-canadian-pharmacies-this-week-at-a-fraction-of-the-cost-of-ozempic/",
+    "topic": "Legal / regulatory",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic",
+      "semaglutide"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "84fec33d63cd92ccce3f8a34",
+    "date": "2026-05-20",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "wellandtribune.ca",
+    "sourceDomain": "wellandtribune.ca",
+    "sourceTier": "Other",
+    "title": "Generic semaglutide to hit Canadian pharmacies this week at a fraction of the cost of Ozempic",
+    "snippet": "",
+    "url": "https://www.wellandtribune.ca/business/generic-semaglutide-to-hit-canadian-pharmacies-this-week-at-a-fraction-of-the-cost-of-ozempic/article_59b0a728-a9e4-55aa-a0c8-50a98b44bc7c.html",
+    "topic": "Legal / regulatory",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic",
+      "semaglutide"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "83e99cf493300ec7629cf2d3",
+    "date": "2026-05-20",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "thepeterboroughexaminer.com",
+    "sourceDomain": "thepeterboroughexaminer.com",
+    "sourceTier": "Other",
+    "title": "Generic semaglutide to hit Canadian pharmacies this week at a fraction of the cost of Ozempic",
+    "snippet": "",
+    "url": "https://www.thepeterboroughexaminer.com/business/generic-semaglutide-to-hit-canadian-pharmacies-this-week-at-a-fraction-of-the-cost-of-ozempic/article_ac382f22-f3a9-50e7-b0f7-bdd40abbc796.html",
+    "topic": "Legal / regulatory",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic",
+      "semaglutide"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "f84f23c50a2c69ab0323f43b",
+    "date": "2026-05-20",
+    "company": "Novo Nordisk",
+    "matchedEntity": "semaglutide",
+    "channel": "News",
+    "source": "economictimes.indiatimes.com",
+    "sourceDomain": "economictimes.indiatimes.com",
+    "sourceTier": "Other",
+    "title": "Dr Reddy launches oral semaglutide in India - The Economic Times",
+    "snippet": "",
+    "url": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/dr-reddys-launches-oral-semaglutide-in-india/articleshow/131229277.cms",
+    "topic": "Oral GLP-1",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "semaglutide",
+      "oral semaglutide"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "646356313e0f2032e0f6aa6b",
+    "date": "2026-05-20",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "lethbridgeherald.com",
+    "sourceDomain": "lethbridgeherald.com",
+    "sourceTier": "Other",
+    "title": "Generic semaglutide to hit Canadian pharmacies this week at a fraction of the cost of Ozempic",
+    "snippet": "",
+    "url": "https://lethbridgeherald.com/news/national-news/2026/05/20/generic-semaglutide-to-hit-canadian-pharmacies-this-week-at-a-fraction-of-the-cost-of-ozempic/",
+    "topic": "Legal / regulatory",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic",
+      "semaglutide"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "6d3085d4a86cbde99fa0e077",
+    "date": "2026-05-20",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "wjla.com",
+    "sourceDomain": "wjla.com",
+    "sourceTier": "Other",
+    "title": "Maryland moves to cap Ozempic costs in first - of - its - kind proposal",
+    "snippet": "",
+    "url": "https://wjla.com/news/local/ozempic-maryland-costs-proposal-cap-limit-glp1-drugs-weight-loss-diabetes-medication-prescription-novo-nordisk-health-insurance-affordability-injections-healthcare-health-plans-prices",
+    "topic": "GLP-1 market competition",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "689cb01029c9e16d226d0db0",
+    "date": "2026-05-20",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "ibtimes.com.au",
+    "sourceDomain": "ibtimes.com.au",
+    "sourceTier": "Other",
+    "title": " ( PHOTO ) Olivia Wilde Dramatic Weight Loss Sparks Online Health Concerns and Ozempic Speculation",
+    "snippet": "",
+    "url": "https://www.ibtimes.com.au/olivia-wilde-appearance-health-concerns-1869209",
+    "topic": "Weight loss efficacy",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "4b01913e2df962c62cfff26e",
+    "date": "2026-05-20",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "moneycontrol.com",
+    "sourceDomain": "moneycontrol.com",
+    "sourceTier": "Other",
+    "title": "Weight loss drugs Ozempic and Mounaro also lower heart and kidney disease risks , says study",
+    "snippet": "",
+    "url": "https://www.moneycontrol.com/health-and-fitness/weight-loss-drugs-ozempic-and-mounaro-also-lower-heart-and-kidney-disease-risks-says-study-article-13924878.html",
+    "topic": "Side effects / safety",
+    "sentiment": "Negative",
+    "sentimentScore": -0.45,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "bb1f17db118e58f41a3ca3d7",
+    "date": "2026-05-20",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "naturalnews.com",
+    "sourceDomain": "naturalnews.com",
+    "sourceTier": "Other",
+    "title": "Weight loss wonder drug Ozempic linked to psychiatric risks as gut health research points to natural solution – NaturalNews . com",
+    "snippet": "",
+    "url": "https://www.naturalnews.com/2026-05-19-ozempic-linked-to-psychiatric-risks-gut-health.html",
+    "topic": "Side effects / safety",
+    "sentiment": "Negative",
+    "sentimentScore": -0.45,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "b462d0d29cf7669f3bb8f575",
+    "date": "2026-05-20",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "dailymail.com",
+    "sourceDomain": "dailymail.com",
+    "sourceTier": "Other",
+    "title": "Hidden warning signs you are taking the WRONG dose of Ozempic",
+    "snippet": "",
+    "url": "https://www.dailymail.com/lifestyle/fitness-wellbeing/article-15827741/glp-1-ozempic-weight-loss-jabs-injections-warning-signs.html",
+    "topic": "GLP-1 market competition",
+    "sentiment": "Negative",
+    "sentimentScore": -0.45,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
     ],
     "rawSource": "GDELT",
     "language": "English",
@@ -1589,6 +3213,93 @@
     "sourceAuthority": 45,
     "matchedKeywords": [
       "Eli Lilly"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "15d6e23f84ca323680ff288e",
+    "date": "2026-05-19",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "wypr.org",
+    "sourceDomain": "wypr.org",
+    "sourceTier": "Other",
+    "title": "Maryland Drug Affordability Board puts payment limits on Ozempic",
+    "snippet": "",
+    "url": "https://www.wypr.org/wypr-news/2026-05-19/maryland-drug-affordability-board-puts-payment-limits-on-ozempic",
+    "topic": "Drug pricing / insurance / access",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "ab4b0d86a3f9f5f505f9767a",
+    "date": "2026-05-19",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "brobible.com",
+    "sourceDomain": "brobible.com",
+    "sourceTier": "Other",
+    "title": "Annie Agar Responds To Ozempic Allegations After Weight Loss",
+    "snippet": "",
+    "url": "https://brobible.com/culture/article/annie-agar-responds-ozempic-allegations/",
+    "topic": "Weight loss efficacy",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "8f1834020152497bf1a6fb8f",
+    "date": "2026-05-19",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "usmagazine.com",
+    "sourceDomain": "usmagazine.com",
+    "sourceTier": "Other",
+    "title": "How Ozempic and GLP - 1 Drugs Are Changing Sleep Apnea Treatment",
+    "snippet": "",
+    "url": "https://www.usmagazine.com/celebrity-news/news/what-new-research-shows-about-ozempic-and-sleep-apnea/",
+    "topic": "GLP-1 market competition",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
     ],
     "rawSource": "GDELT",
     "language": "English",

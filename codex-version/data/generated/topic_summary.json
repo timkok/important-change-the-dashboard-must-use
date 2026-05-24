@@ -72,41 +72,55 @@
   {
     "company": "Novo Nordisk",
     "topic": "GLP-1 market competition",
-    "mentions": 22,
-    "averageSentimentScore": -0.02,
-    "reach": 2200000
+    "mentions": 39,
+    "averageSentimentScore": -0.023,
+    "reach": 3900000
   },
   {
     "company": "Novo Nordisk",
     "topic": "Legal / regulatory",
-    "mentions": 12,
-    "averageSentimentScore": 0.037,
-    "reach": 1200000
-  },
-  {
-    "company": "Novo Nordisk",
-    "topic": "Oral GLP-1",
-    "mentions": 5,
-    "averageSentimentScore": 0.0,
-    "reach": 900000
-  },
-  {
-    "company": "Novo Nordisk",
-    "topic": "Weight loss efficacy",
-    "mentions": 4,
-    "averageSentimentScore": 0.0,
-    "reach": 800000
+    "mentions": 24,
+    "averageSentimentScore": 0.075,
+    "reach": 2400000
   },
   {
     "company": "Novo Nordisk",
     "topic": "Other",
-    "mentions": 4,
+    "mentions": 13,
+    "averageSentimentScore": 0.035,
+    "reach": 1900000
+  },
+  {
+    "company": "Novo Nordisk",
+    "topic": "Oral GLP-1",
+    "mentions": 12,
     "averageSentimentScore": 0.113,
-    "reach": 1000000
+    "reach": 1600000
+  },
+  {
+    "company": "Novo Nordisk",
+    "topic": "Weight loss efficacy",
+    "mentions": 10,
+    "averageSentimentScore": 0.0,
+    "reach": 1400000
   },
   {
     "company": "Novo Nordisk",
     "topic": "Earnings / revenue / market share",
+    "mentions": 4,
+    "averageSentimentScore": 0.0,
+    "reach": 400000
+  },
+  {
+    "company": "Novo Nordisk",
+    "topic": "Side effects / safety",
+    "mentions": 3,
+    "averageSentimentScore": -0.45,
+    "reach": 300000
+  },
+  {
+    "company": "Novo Nordisk",
+    "topic": "Drug pricing / insurance / access",
     "mentions": 2,
     "averageSentimentScore": 0.0,
     "reach": 200000
