@@ -1,0 +1,106 @@
+[
+  {
+    "topic": "Weight loss efficacy",
+    "Novo Nordisk": 15,
+    "Eli Lilly": 47,
+    "total": 62,
+    "novoShare": 0.2419,
+    "lillyShare": 0.7581
+  },
+  {
+    "topic": "Other",
+    "Novo Nordisk": 25,
+    "Eli Lilly": 21,
+    "total": 46,
+    "novoShare": 0.5435,
+    "lillyShare": 0.4565
+  },
+  {
+    "topic": "GLP-1 market competition",
+    "Novo Nordisk": 8,
+    "Eli Lilly": 4,
+    "total": 12,
+    "novoShare": 0.6667,
+    "lillyShare": 0.3333
+  },
+  {
+    "topic": "Cardiovascular outcomes",
+    "Novo Nordisk": 8,
+    "Eli Lilly": 1,
+    "total": 9,
+    "novoShare": 0.8889,
+    "lillyShare": 0.1111
+  },
+  {
+    "topic": "Drug pricing / insurance / access",
+    "Novo Nordisk": 5,
+    "Eli Lilly": 3,
+    "total": 8,
+    "novoShare": 0.625,
+    "lillyShare": 0.375
+  },
+  {
+    "topic": "Earnings / revenue / market share",
+    "Novo Nordisk": 4,
+    "Eli Lilly": 3,
+    "total": 7,
+    "novoShare": 0.5714,
+    "lillyShare": 0.4286
+  },
+  {
+    "topic": "Legal / regulatory",
+    "Novo Nordisk": 5,
+    "Eli Lilly": 2,
+    "total": 7,
+    "novoShare": 0.7143,
+    "lillyShare": 0.2857
+  },
+  {
+    "topic": "Oral GLP-1",
+    "Novo Nordisk": 5,
+    "Eli Lilly": 1,
+    "total": 6,
+    "novoShare": 0.8333,
+    "lillyShare": 0.1667
+  },
+  {
+    "topic": "Compounded GLP-1s",
+    "Novo Nordisk": 6,
+    "Eli Lilly": 0,
+    "total": 6,
+    "novoShare": 1.0,
+    "lillyShare": 0.0
+  },
+  {
+    "topic": "Pipeline / next-generation drugs",
+    "Novo Nordisk": 1,
+    "Eli Lilly": 4,
+    "total": 5,
+    "novoShare": 0.2,
+    "lillyShare": 0.8
+  },
+  {
+    "topic": "Celebrity / lifestyle culture",
+    "Novo Nordisk": 2,
+    "Eli Lilly": 2,
+    "total": 4,
+    "novoShare": 0.5,
+    "lillyShare": 0.5
+  },
+  {
+    "topic": "Diabetes treatment",
+    "Novo Nordisk": 2,
+    "Eli Lilly": 2,
+    "total": 4,
+    "novoShare": 0.5,
+    "lillyShare": 0.5
+  },
+  {
+    "topic": "Side effects / safety",
+    "Novo Nordisk": 2,
+    "Eli Lilly": 1,
+    "total": 3,
+    "novoShare": 0.6667,
+    "lillyShare": 0.3333
+  }
+]

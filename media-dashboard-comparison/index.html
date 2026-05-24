@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Media Exposure Dashboard Comparison Portal - Novo Nordisk vs Eli Lilly. Review Codex and Antigravity versions side-by-side.">
+  <title>GLP-1 Media Exposure Dashboard Comparison Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #070a13;
+      --bg-secondary: #0d1222;
+      --bg-card: rgba(20, 27, 49, 0.65);
+      --border-color: rgba(255, 255, 255, 0.08);
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --accent-novo: #00d2c4;
+      --accent-lilly: #b624ff;
+      --font-logo: 'Outfit', sans-serif;
+      --font-body: 'Inter', sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      line-height: 1.5;
+      padding: 3rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1000px;
+      width: 100%;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+
+    header h1 {
+      font-family: var(--font-logo);
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, var(--accent-novo), var(--accent-lilly));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    header p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+    }
+
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      .dashboard-grid { grid-template-columns: 1fr; }
+    }
+
+    .portal-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 2.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      backdrop-filter: blur(8px);
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .portal-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255, 255, 255, 0.15);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    .card-title {
+      font-family: var(--font-logo);
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    .card-novo { border-top: 4px solid var(--accent-novo); }
+    .card-lilly { border-top: 4px solid var(--accent-lilly); }
+
+    .card-desc {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .feature-list {
+      list-style: none;
+      margin-bottom: 2rem;
+    }
+
+    .feature-list li {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .feature-list li::before {
+      content: "✦";
+      color: var(--accent-novo);
+    }
+
+    .card-lilly .feature-list li::before {
+      color: var(--accent-lilly);
+    }
+
+    .btn {
+      display: block;
+      text-align: center;
+      padding: 0.85rem 1.5rem;
+      font-family: var(--font-logo);
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-novo {
+      background: rgba(0, 210, 196, 0.1);
+      color: var(--accent-novo);
+      border: 1px solid var(--accent-novo);
+    }
+
+    .btn-novo:hover {
+      background: var(--accent-novo);
+      color: var(--bg-primary);
+      box-shadow: 0 0 15px rgba(0, 210, 196, 0.35);
+    }
+
+    .btn-lilly {
+      background: rgba(182, 36, 255, 0.1);
+      color: var(--accent-lilly);
+      border: 1px solid var(--accent-lilly);
+    }
+
+    .btn-lilly:hover {
+      background: var(--accent-lilly);
+      color: var(--text-primary);
+      box-shadow: 0 0 15px rgba(182, 36, 255, 0.35);
+    }
+
+    .meta-links {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-color);
+      padding-top: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .meta-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .meta-links a:hover {
+      color: var(--text-primary);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>GLP-1 Media Comparison Portal</h1>
+      <p>Novo Nordisk vs Eli Lilly Exposure Dashboards</p>
+    </header>
+
+    <div class="dashboard-grid">
+      <!-- Card: Codex -->
+      <div class="portal-card card-novo">
+        <div>
+          <h2 class="card-title">Codex Version</h2>
+          <p class="card-desc">Standard implementation using key-based APIs and basic data pipelines. Ideal for baseline comparison.</p>
+          <ul class="feature-list">
+            <li>Standard metrics extraction</li>
+            <li>Basic deduplication</li>
+            <li>Tab-based HTML layout</li>
+          </ul>
+        </div>
+        <a href="./codex/" class="btn btn-novo">Enter Codex Dashboard</a>
+      </div>
+
+      <!-- Card: Antigravity -->
+      <div class="portal-card card-lilly">
+        <div>
+          <h2 class="card-title">Antigravity Version</h2>
+          <p class="card-desc">Advanced data quality edition featuring strict keyword validation, sanitizing tracking URLs, dual-layer title deduplication, and pure SVG visual charts.</p>
+          <ul class="feature-list">
+            <li>Contextual false-positive checks</li>
+            <li>Deep URL query sanitization</li>
+            <li>High-performance responsive SVG charts</li>
+            <li>Complete data-quality diagnostics panel</li>
+          </ul>
+        </div>
+        <a href="./antigravity/" class="btn btn-lilly">Enter Antigravity Dashboard</a>
+      </div>
+    </div>
+
+    <footer class="meta-links">
+      <span>Raw Pipeline Diagnostics:</span>
+      <a href="./codex/data/generated/metadata.json" target="_blank">Codex Metadata</a>
+      <span>|</span>
+      <a href="./antigravity/data/generated/metadata.json" target="_blank">Antigravity Metadata</a>
+    </footer>
+  </div>
+</body>
+</html>

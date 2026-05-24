@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Independent Antigravity media exposure dashboard comparing Novo Nordisk vs Eli Lilly GLP-1 weight loss and diabetes treatments.">
+  <title>Novo Nordisk vs Eli Lilly Media Exposure Dashboard (Antigravity)</title>
+  
+  <!-- Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Dashboard Styling -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header Area -->
+    <header class="app-header">
+      <div class="header-logo">
+        <span class="logo-icon">▲</span>
+        <div class="logo-text">
+          <h1>GLP-1 Media Exposure</h1>
+          <span class="badge badge-antigravity">Antigravity Edition</span>
+        </div>
+      </div>
+      <div class="header-status" id="header-status">
+        <span class="status-indicator status-loading"></span>
+        <span class="status-text">Loading data...</span>
+      </div>
+    </header>
+
+    <!-- Global Controls & Filters -->
+    <section class="filters-bar" id="filters-container">
+      <div class="filter-group">
+        <label for="filter-company">Company</label>
+        <select id="filter-company">
+          <option value="Both">Both Companies</option>
+          <option value="Novo Nordisk">Novo Nordisk</option>
+          <option value="Eli Lilly">Eli Lilly</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="filter-date">Date Range</label>
+        <select id="filter-date">
+          <option value="90d">Last 90 Days</option>
+          <option value="30d">Last 30 Days</option>
+          <option value="7d">Last 7 Days</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="filter-channel">Channel</label>
+        <select id="filter-channel">
+          <option value="All">All Channels</option>
+          <option value="News">News</option>
+          <option value="Finance Media">Finance Media</option>
+          <option value="Trade Media">Trade Media</option>
+          <option value="Consumer Media">Consumer Media</option>
+          <option value="Search">Search</option>
+          <option value="Social">Social</option>
+          <option value="CSV Import">CSV Import</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="filter-topic">Topic</label>
+        <select id="filter-topic">
+          <option value="All">All Topics</option>
+          <option value="Weight loss efficacy">Weight loss efficacy</option>
+          <option value="Diabetes treatment">Diabetes treatment</option>
+          <option value="GLP-1 market competition">GLP-1 market competition</option>
+          <option value="Drug pricing / insurance / access">Drug pricing / access</option>
+          <option value="Supply shortage">Supply shortage</option>
+          <option value="Side effects / safety">Side effects / safety</option>
+          <option value="Cardiovascular outcomes">Cardiovascular outcomes</option>
+          <option value="Oral GLP-1">Oral GLP-1</option>
+          <option value="Pipeline / next-generation drugs">Pipeline / next-gen</option>
+          <option value="Earnings / revenue / market share">Earnings / revenue</option>
+          <option value="Celebrity / lifestyle culture">Celebrity & lifestyle</option>
+          <option value="Public health / obesity policy">Obesity policy</option>
+          <option value="Compounded GLP-1s">Compounded GLP-1s</option>
+          <option value="Legal / regulatory">Legal / regulatory</option>
+          <option value="Food industry impact">Food industry impact</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="filter-sentiment">Sentiment</label>
+        <select id="filter-sentiment">
+          <option value="All">All Sentiment</option>
+          <option value="Positive">Positive</option>
+          <option value="Neutral">Neutral</option>
+          <option value="Negative">Negative</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="filter-tier">Source Tier</label>
+        <select id="filter-tier">
+          <option value="All">All Tiers</option>
+          <option value="Tier 1">Tier 1</option>
+          <option value="Trade">Trade</option>
+          <option value="Finance">Finance</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="filter-search-group">
+        <label for="search-box">Search Articles</label>
+        <div class="search-input-wrapper">
+          <input type="text" id="search-box" placeholder="Search title, source, snippet...">
+          <button id="search-clear-btn" class="search-clear-btn" style="display:none;">&times;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Navigation Tabs -->
+    <nav class="tabs-nav" id="tabs-container">
+      <button class="tab-btn active" data-tab="overview">Overview</button>
+      <button class="tab-btn" data-tab="channels">Channels</button>
+      <button class="tab-btn" data-tab="topics">Topics</button>
+      <button class="tab-btn" data-tab="trends">Trends</button>
+      <button class="tab-btn" data-tab="explorer">Explorer</button>
+      <button class="tab-btn" data-tab="alerts">Alerts <span class="tab-badge" id="alerts-count-badge" style="display:none;">0</span></button>
+      <button class="tab-btn" data-tab="data-quality">Data Quality</button>
+      <button class="tab-btn" data-tab="compare-notes">Compare Notes</button>
+    </nav>
+
+    <!-- Main Workspace Content -->
+    <main class="dashboard-content">
+      <!-- Error / Empty State overlay -->
+      <div id="error-state" class="error-state" style="display: none;">
+        <div class="error-card">
+          <span class="error-icon">⚠</span>
+          <h2 id="error-title">Data Loading Error</h2>
+          <p id="error-message">Generated data files were not found on the deployed site. Check the GitHub Actions data pipeline and Pages artifact.</p>
+        </div>
+      </div>
+
+      <!-- Tab: Overview -->
+      <section id="tab-overview" class="tab-panel active">
+        <!-- KPI Cards Grid -->
+        <div class="kpi-grid">
+          <div class="kpi-card brand-novo">
+            <div class="kpi-card-header">
+              <h3>Novo Nordisk Exposure</h3>
+              <span class="brand-dot"></span>
+            </div>
+            <div class="kpi-value" id="kpi-novo-mentions">-</div>
+            <div class="kpi-subtext" id="kpi-novo-sov">- SOV</div>
+          </div>
+          
+          <div class="kpi-card brand-lilly">
+            <div class="kpi-card-header">
+              <h3>Eli Lilly Exposure</h3>
+              <span class="brand-dot"></span>
+            </div>
+            <div class="kpi-value" id="kpi-lilly-mentions">-</div>
+            <div class="kpi-subtext" id="kpi-lilly-sov">- SOV</div>
+          </div>
+
+          <div class="kpi-card">
+            <div class="kpi-card-header">
+              <h3>Weighted SOV Winner</h3>
+            </div>
+            <div class="kpi-value value-smalltext" id="kpi-sov-winner">-</div>
+            <div class="kpi-subtext" id="kpi-sov-gap">- gap</div>
+          </div>
+
+          <div class="kpi-card">
+            <div class="kpi-card-header">
+              <h3>Sentiment Gap</h3>
+            </div>
+            <div class="kpi-value value-smalltext" id="kpi-sentiment-gap">-</div>
+            <div class="kpi-subtext" id="kpi-sentiment-lead">- Net Positive</div>
+          </div>
+
+          <div class="kpi-card">
+            <div class="kpi-card-header">
+              <h3>Exposure Momentum</h3>
+            </div>
+            <div class="kpi-value value-smalltext" id="kpi-momentum-winner">-</div>
+            <div class="kpi-subtext" id="kpi-momentum-rate">- growth rate</div>
+          </div>
+
+          <div class="kpi-card alert-risk">
+            <div class="kpi-card-header">
+              <h3>Active High-Risk Alerts</h3>
+              <span class="alert-icon-dot"></span>
+            </div>
+            <div class="kpi-value" id="kpi-high-alerts">-</div>
+            <div class="kpi-subtext">Needs immediate review</div>
+          </div>
+        </div>
+
+        <!-- Charts Row 1 -->
+        <div class="dashboard-row grid-2">
+          <div class="dashboard-card chart-container">
+            <div class="card-header">
+              <h2>Media Mentions Over Time</h2>
+              <p class="card-desc">Volume of daily mentions aggregated across active filters</p>
+            </div>
+            <div class="chart-wrapper" id="chart-mentions-time">
+              <!-- SVG chart inserted here -->
+            </div>
+          </div>
+
+          <div class="dashboard-card chart-container">
+            <div class="card-header">
+              <h2>Share of Voice by Channel</h2>
+              <p class="card-desc">Media channel composition and relative brand share</p>
+            </div>
+            <div class="chart-wrapper" id="chart-sov-channel">
+              <!-- SVG chart inserted here -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Charts Row 2 -->
+        <div class="dashboard-row grid-3">
+          <div class="dashboard-card chart-container">
+            <div class="card-header">
+              <h2>Sentiment Distribution</h2>
+              <p class="card-desc">Volume breakdown of positive, neutral, and negative tone</p>
+            </div>
+            <div class="chart-wrapper" id="chart-sentiment-dist">
+              <!-- SVG chart inserted here -->
+            </div>
+          </div>
+
+          <div class="dashboard-card chart-container">
+            <div class="card-header">
+              <h2>Source Tiers</h2>
+              <p class="card-desc">Mentions breakdown by Tier 1, Trade, and Finance media</p>
+            </div>
+            <div class="chart-wrapper" id="chart-source-tiers">
+              <!-- SVG chart inserted here -->
+            </div>
+          </div>
+
+          <div class="dashboard-card chart-container">
+            <div class="card-header">
+              <h2>Topic Mix</h2>
+              <p class="card-desc">Exposure share of top thematic topics</p>
+            </div>
+            <div class="chart-wrapper" id="chart-topic-mix">
+              <!-- SVG inserted here -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tab: Channels -->
+      <section id="tab-channels" class="tab-panel">
+        <div class="dashboard-card full-width">
+          <div class="card-header">
+            <h2>Media Exposure Channels</h2>
+            <p class="card-desc">Comparative breakdown of brand visibility across news tiers, blogs, search indices, and imports</p>
+          </div>
+          <div class="channels-matrix-wrapper">
+            <table class="data-table" id="channels-table">
+              <thead>
+                <tr>
+                  <th>Channel</th>
+                  <th>Novo Nordisk Mentions</th>
+                  <th>Novo Nordisk Share</th>
+                  <th>Eli Lilly Mentions</th>
+                  <th>Eli Lilly Share</th>
+                  <th>Total</th>
+                  <th>Share of Voice</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Rows injected dynamically -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tab: Topics -->
+      <section id="tab-topics" class="tab-panel">
+        <div class="dashboard-row grid-2">
+          <div class="dashboard-card chart-container">
+            <div class="card-header">
+              <h2>Thematic Topic Mix Comparison</h2>
+              <p class="card-desc">Comparative count of articles classified into semantic topic buckets</p>
+            </div>
+            <div class="chart-wrapper" id="chart-topic-mix-comparison">
+              <!-- SVG chart injected -->
+            </div>
+          </div>
+
+          <div class="dashboard-card chart-container">
+            <div class="card-header">
+              <h2>Topic Heatmap</h2>
+              <p class="card-desc">Grid showing volume intensity of topics covered by both companies</p>
+            </div>
+            <div class="chart-wrapper" id="chart-topic-heatmap">
+              <!-- SVG Heatmap injected -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tab: Trends -->
+      <section id="tab-trends" class="tab-panel">
+        <div class="dashboard-card full-width">
+          <div class="card-header">
+            <h2>Media Exposure Momentum & Spikes</h2>
+            <p class="card-desc">Timeline of coverage surges indicating key events, trial results, approvals, or supply challenges</p>
+          </div>
+          <div class="chart-wrapper large-chart" id="chart-trends-spikes">
+            <!-- Large timeline spike chart inserted here -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Tab: Explorer -->
+      <section id="tab-explorer" class="tab-panel">
+        <div class="table-actions">
+          <div class="table-stats" id="explorer-records-count">Showing 0 of 0 articles</div>
+          <button id="explorer-export-csv" class="btn btn-secondary">Export Filtered CSV</button>
+        </div>
+        <div class="table-wrapper">
+          <table class="data-table" id="explorer-table">
+            <thead>
+              <tr>
+                <th class="sortable" data-sort="date">Date <span class="sort-icon">⇅</span></th>
+                <th class="sortable" data-sort="company">Company <span class="sort-icon">⇅</span></th>
+                <th class="sortable" data-sort="source">Source <span class="sort-icon">⇅</span></th>
+                <th class="sortable" data-sort="tier">Tier <span class="sort-icon">⇅</span></th>
+                <th>Title</th>
+                <th class="sortable" data-sort="topic">Topic <span class="sort-icon">⇅</span></th>
+                <th class="sortable" data-sort="sentiment">Sentiment <span class="sort-icon">⇅</span></th>
+                <th class="sortable" data-sort="reach">Reach Proxy <span class="sort-icon">⇅</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Rows dynamically added -->
+            </tbody>
+          </table>
+        </div>
+        <div class="pagination-controls" id="explorer-pagination">
+          <!-- Page buttons added by Javascript -->
+        </div>
+      </section>
+
+      <!-- Tab: Alerts -->
+      <section id="tab-alerts" class="tab-panel">
+        <div class="alerts-container">
+          <div class="alerts-header">
+            <h2>Active Alert System</h2>
+            <p>Spike alerts, regulatory warnings, and share-of-voice alerts derived dynamically from active data sets</p>
+          </div>
+          <div class="alerts-list" id="alerts-list-container">
+            <!-- Alerts cards injected here -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Tab: Data Quality -->
+      <section id="tab-data-quality" class="tab-panel">
+        <div class="data-quality-grid">
+          <!-- Left Column: Parameters & Metadata -->
+          <div class="dashboard-card">
+            <div class="card-header">
+              <h2>Data Freshness & Coverage</h2>
+            </div>
+            <div class="metadata-list" id="dq-metadata-list">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+
+          <!-- Right Column: Proxy Warnings & Limitations -->
+          <div class="dashboard-card">
+            <div class="card-header">
+              <h2>Real Data Transparency & Proxy Mappings</h2>
+            </div>
+            <div class="text-content">
+              <h3>Caveats regarding GDELT DOC 2.0</h3>
+              <p>GDELT does not provide native social engagement or reach. To maintain a functional dashboard, the following proxy mappings are applied:</p>
+              <ul>
+                <li><strong>Reach Proxy</strong>: Injected based on source authority and tier (Tier 1 = 100,000, Finance = 50,000, Trade = 35,000, Other = 10,000).</li>
+                <li><strong>Engagement Score</strong>: Defaulted to <code>0</code> for GDELT. Active metrics are only populated when importing files from Meltwater, Brandwatch, or Talkwalker via the local CSV loader.</li>
+                <li><strong>Source Authority</strong>: Standardized domain-tier rank from 45 (Other) to 95 (Tier 1).</li>
+              </ul>
+              <p class="highlight-text-warning">All charts and explorer cards referencing reach or authority metrics display a "Proxy Metric" label for compliance and transparency.</p>
+              
+              <h3>Data Deduplication Statistics</h3>
+              <div class="dedupe-box" id="dq-dedupe-summary">
+                <!-- Deduplication statistics rendered via JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-card full-width">
+          <div class="card-header">
+            <h2>Data Quality Warnings</h2>
+            <p class="card-desc">Failures or structural issues reported during the dataset assembly pipeline</p>
+          </div>
+          <div class="warnings-list" id="dq-warnings-container">
+            <!-- Warnings rendered via JS -->
+          </div>
+        </div>
+        
+        <div class="dq-files-box">
+          <h3>Generated Data Artifacts</h3>
+          <p>Access the raw structured data used to render this dashboard directly:</p>
+          <div class="dq-links">
+            <a href="./data/generated/mentions.json" target="_blank" class="btn btn-secondary">mentions.json</a>
+            <a href="./data/generated/metadata.json" target="_blank" class="btn btn-secondary">metadata.json</a>
+            <a href="./data/generated/daily_counts.json" target="_blank" class="btn btn-secondary">daily_counts.json</a>
+            <a href="./data/generated/topic_summary.json" target="_blank" class="btn btn-secondary">topic_summary.json</a>
+            <a href="./data/generated/source_summary.json" target="_blank" class="btn btn-secondary">source_summary.json</a>
+            <a href="./data/generated/alerts.json" target="_blank" class="btn btn-secondary">alerts.json</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tab: Compare Notes -->
+      <section id="tab-compare-notes" class="tab-panel">
+        <div class="dashboard-card full-width">
+          <div class="card-header">
+            <h2>Codex vs Antigravity Comparison Notes</h2>
+          </div>
+          <div class="text-content">
+            <p>This is the <strong>Antigravity Dashboard</strong> version, optimized for better URL deduplication, topic classification, and responsive SVG visual charts. Use the links below to navigate back to the Codex version of the dashboard and its configuration parameters to compare performance side-by-side.</p>
+            
+            <div class="comparison-links">
+              <a href="../codex/" class="btn btn-primary" id="comparison-link-codex">View Codex Version Dashboard</a>
+              <a href="../codex/data/generated/metadata.json" class="btn btn-secondary" id="comparison-link-codex-meta">View Codex metadata.json</a>
+            </div>
+
+            <h3>Evaluation Checklist</h3>
+            <table class="data-table small-table">
+              <thead>
+                <tr>
+                  <th>Checklist Item</th>
+                  <th>Antigravity Implementation details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>1. Data Freshness</strong></td>
+                  <td>Generated dynamically via GitHub Actions with manageable fetching windows. Uses relative paths only.</td>
+                </tr>
+                <tr>
+                  <td><strong>2. Record Count</strong></td>
+                  <td>Transparent GDELT queries with post-fetch false positive context filtering on single-word match tokens.</td>
+                </tr>
+                <tr>
+                  <td><strong>3. Deduplication Quality</strong></td>
+                  <td>Deduplicates first on normalized clean URLs (stripping query tags and subdomains), then falls back to alphanumeric titles + date + source.</td>
+                </tr>
+                <tr>
+                  <td><strong>4. Topic Classification Quality</strong></td>
+                  <td>Rules-based classification mapping to 16 specialized obesity/cardiology/policy buckets.</td>
+                </tr>
+                <tr>
+                  <td><strong>5. Alert Usefulness</strong></td>
+                  <td>Tracks spikes in safety issues, legal disputes, price wars, and SOV leads, highlighting real-time issues without mock injections.</td>
+                </tr>
+                <tr>
+                  <td><strong>6. Dashboard Usability</strong></td>
+                  <td>Clean responsive CSS styles with CSS grid, CSS variables, glassmorphic layout, and custom light SVG renderings (no massive d3/Chart.js scripts needed).</td>
+                </tr>
+                <tr>
+                  <td><strong>7. Deployment Reliability</strong></td>
+                  <td>One combined GitHub Actions workflow deploying to subfolder paths on GitHub Pages. Direct absolute links omitted for root path compatibility.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Explorer Sidebar Details Drawer (Slides from Right) -->
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <aside class="details-drawer" id="details-drawer">
+    <div class="drawer-header">
+      <h2>Article Details</h2>
+      <button class="close-drawer" id="close-drawer-btn">&times;</button>
+    </div>
+    <div class="drawer-body" id="drawer-content">
+      <!-- Injected via JS -->
+    </div>
+  </aside>
+
+  <!-- Dashboard JavaScript Application -->
+  <script src="app.js"></script>
+</body>
+</html>

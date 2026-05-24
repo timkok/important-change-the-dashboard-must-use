@@ -1,0 +1,40 @@
+{
+  "lastUpdated": "2026-05-24T15:22:33.980855+00:00",
+  "coverageStart": "2026-05-10",
+  "coverageEnd": "2026-05-24",
+  "recordCount": 179,
+  "sourcesUsed": [
+    "GDELT"
+  ],
+  "sourcesUnavailable": [
+    "Mediastack",
+    "NewsAPI",
+    "Brandwatch",
+    "Meltwater",
+    "Talkwalker"
+  ],
+  "proxyMetricFields": [
+    "reach",
+    "sourceAuthority",
+    "engagement"
+  ],
+  "warnings": [],
+  "queryDefinitions": {
+    "Novo Nordisk": {
+      "query": "(\"Novo Nordisk\" OR Ozempic OR Wegovy OR Rybelsus OR semaglutide OR \"oral semaglutide\")",
+      "falsePositiveControls": "Standalone 'Novo' keyword triggers context validator requiringOzempic, Wegovy, Rybelsus, semaglutide, GLP-1, obesity, diabetes, pharmaceutical, or pharma."
+    },
+    "Eli Lilly": {
+      "query": "(\"Eli Lilly\" OR Mounjaro OR Zepbound OR tirzepatide OR orforglipron OR retatrutide)",
+      "falsePositiveControls": "Standalone 'Lilly' keyword triggers context validator requiring Mounjaro, Zepbound, tirzepatide, orforglipron, retatrutide, GLP-1, obesity, diabetes, pharmaceutical, or pharma."
+    }
+  },
+  "deduplicationSummary": {
+    "originalRecordCount": 200,
+    "duplicatesRemoved": 21,
+    "dedupedByURL": 21,
+    "dedupedByTitleDateDomain": 0,
+    "finalRecordCount": 179
+  },
+  "version": "antigravity"
+}
