@@ -64,6 +64,10 @@
           </div>
           <a href="./data/generated/metadata.json" target="_blank" rel="noopener noreferrer">metadata.json</a>
         </section>
+        <section class="trust-strip" aria-label="Data trust disclosures">
+          <strong>Real GDELT-generated data, not mock data.</strong>
+          <span>Reach, engagement, and sourceAuthority are proxies unless imported from CSV/social-listening exports.</span>
+        </section>
         <p id="cacheNote" class="cache-note" hidden>Metadata may be older than the latest workflow run or browser cache. Try a hard refresh or add a cache-busting query string.</p>
 
         <section class="filters" aria-label="Filters">
@@ -119,15 +123,20 @@
             <div id="leaderPanel" class="leader-grid"></div>
           </section>
 
+          <section class="panel decision-summary">
+            <div class="panel-heading"><h2>Decision summary</h2><span>Traceable to current records</span></div>
+            <div id="decisionSummary" class="decision-grid"></div>
+          </section>
+
           <div class="kpi-grid dense">
             <article class="kpi"><span>Novo mentions</span><strong id="kpiNovoMentions">0</strong></article>
             <article class="kpi"><span>Lilly mentions</span><strong id="kpiLillyMentions">0</strong></article>
-            <article class="kpi"><span>Novo share of voice</span><strong id="kpiNovoSov">0%</strong></article>
-            <article class="kpi"><span>Lilly share of voice</span><strong id="kpiLillySov">0%</strong></article>
-            <article class="kpi"><span>Weighted SOV leader</span><strong id="kpiWeightedLeader">--</strong></article>
-            <article class="kpi"><span>Sentiment leader</span><strong id="kpiSentimentLeader">--</strong></article>
+            <article class="kpi"><span title="Share of voice = company mentions / total mentions.">Novo share of voice</span><strong id="kpiNovoSov">0%</strong></article>
+            <article class="kpi"><span title="Share of voice = company mentions / total mentions.">Lilly share of voice</span><strong id="kpiLillySov">0%</strong></article>
+            <article class="kpi"><span title="Weighted SOV = company weightedExposure / total weightedExposure.">Weighted SOV leader</span><strong id="kpiWeightedLeader">--</strong></article>
+            <article class="kpi"><span title="Sentiment score = (positive mentions - negative mentions) / total mentions.">Sentiment leader</span><strong id="kpiSentimentLeader">--</strong></article>
             <article class="kpi"><span>Tier 1 media leader</span><strong id="kpiTierLeader">--</strong></article>
-            <article class="kpi"><span>Risk exposure leader</span><strong id="kpiRiskLeader">--</strong></article>
+            <article class="kpi"><span title="Risk score = mentions + negative x2 + Tier 1 x1.5 + authority / 25.">Risk exposure leader</span><strong id="kpiRiskLeader">--</strong></article>
             <article class="kpi"><span>Latest refresh</span><strong id="kpiRefresh">--</strong></article>
             <article class="kpi"><span>Coverage window</span><strong id="kpiCoverage">--</strong></article>
           </div>
@@ -309,6 +318,10 @@
                 <div><dt>Proxy metric fields</dt><dd id="proxyMetricFields">--</dd></div>
                 <div><dt>Deduplication method</dt><dd id="dedupeMethod">--</dd></div>
                 <div><dt>False-positive handling</dt><dd id="falsePositiveHandling">--</dd></div>
+                <div><dt>Generated data validation</dt><dd id="generatedValidation">--</dd></div>
+                <div><dt>Dashboard path validation</dt><dd id="pathValidation">--</dd></div>
+                <div><dt>Record count check</dt><dd id="recordCountCheck">--</dd></div>
+                <div><dt>Project links</dt><dd id="projectLinks">--</dd></div>
               </dl>
             </article>
             <article class="panel">
@@ -321,7 +334,7 @@
             </article>
             <article class="panel">
               <div class="panel-heading"><h2>Proxy Metric Caveat</h2><span>Required disclosure</span></div>
-              <p class="muted">GDELT does not provide true impressions or social engagement. Reach and sourceAuthority are rule-based proxies. Engagement is 0 unless imported from CSV or paid social-listening exports.</p>
+              <p class="muted"><strong>Reach, engagement, and sourceAuthority are proxies unless imported from CSV/social-listening exports.</strong> GDELT does not provide true impressions or social engagement.</p>
               <p><a href="./data/generated/metadata.json" target="_blank" rel="noopener noreferrer">Open metadata.json</a> · <a href="./data/generated/mentions.json" target="_blank" rel="noopener noreferrer">Open mentions.json</a></p>
               <ul id="warnings" class="list"></ul>
             </article>

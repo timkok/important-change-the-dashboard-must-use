@@ -266,6 +266,7 @@ function render() {
   renderMetadata();
   renderDiagnostics();
   renderExecutive(analytics);
+  renderDecisionSummary(analytics);
   renderInsights(analytics);
   renderKpis(analytics);
   renderTimeline(records);
@@ -350,49 +351,56 @@ function leaderBy(byCompany, metric) {
 function renderFreshnessBanner() {
   const metadata = state.metadata || {};
   const lastUpdated = metadata.lastUpdated ? new Date(metadata.lastUpdated) : null;
-  document.querySelector("#bannerRecordCount").textContent = nf.format(metadata.recordCount || state.mentions.length || 0);
+  const recordCount = Number(metadata.recordCount || state.mentions.length || 0);
+  document.querySelector("#bannerRecordCount").textContent = nf.format(recordCount);
   document.querySelector("#bannerLastUpdated").textContent = lastUpdated ? dtf.format(lastUpdated) : "--";
   document.querySelector("#bannerCoverage").textContent = `${metadata.coverageStart || "--"} to ${metadata.coverageEnd || "--"}`;
   document.querySelector("#bannerFetchMode").textContent = metadata.fetchMode || "--";
   document.querySelector("#bannerRunCounts").textContent = `${nf.format(metadata.previousRecordCount || 0)} / ${nf.format(metadata.newlyFetchedCount || 0)} / ${nf.format(metadata.finalRecordCount || metadata.recordCount || 0)}`;
-  document.querySelector("#bannerWarnings").textContent = nf.format((metadata.warnings || []).length);
-  document.querySelector("#bannerPreserved").textContent = String(Boolean(metadata.preservedExistingData));
+  document.querySelector("#bannerWarnings").textContent = (metadata.warnings || []).length ? nf.format((metadata.warnings || []).length) : "None";
+  document.querySelector("#bannerPreserved").textContent = metadata.preservedExistingData ? "Yes" : "No";
   const ageHours = lastUpdated ? (Date.now() - lastUpdated.getTime()) / 36e5 : Infinity;
   document.querySelector("#cacheNote").hidden = ageHours < 24;
 }
 
 function renderExecutive(analytics) {
   const metaCount = Number(state.metadata.recordCount || state.mentions.length);
-  const caveats = [
-    `Dataset loaded: ${nf.format(state.mentions.length)} records; metadata recordCount: ${nf.format(metaCount)}.`,
-    "GDELT-only baseline unless CSV imports are added.",
-    "Reach, engagement, and sourceAuthority are proxy metrics for GDELT records."
-  ];
   const rows = [
-    ["Overall exposure leader", analytics.leaders.exposure],
-    ["Total mentions by company", COMPANIES.map((company) => `${company}: ${nf.format(analytics.byCompany[company].mentions)}`).join(" | ")],
-    ["Share of voice by company", COMPANIES.map((company) => `${shortCompany(company)} ${pf.format(analytics.byCompany[company].shareOfVoice)}`).join(" | ")],
-    ["Weighted share of voice by company", COMPANIES.map((company) => `${shortCompany(company)} ${pf.format(analytics.byCompany[company].weightedSov)}`).join(" | ")],
-    ["Sentiment score by company", COMPANIES.map((company) => `${shortCompany(company)} ${analytics.byCompany[company].sentimentScore.toFixed(2)}`).join(" | ")],
-    ["Tier 1 media mentions by company", COMPANIES.map((company) => `${shortCompany(company)} ${nf.format(analytics.byCompany[company].tier1)}`).join(" | ")],
-    ["Top topic for Novo", analytics.byCompany["Novo Nordisk"].topTopic],
-    ["Top topic for Lilly", analytics.byCompany["Eli Lilly"].topTopic],
-    ["Biggest risk topic overall", analytics.biggestRiskTopic ? `${analytics.biggestRiskTopic.name} (${analytics.biggestRiskTopic.riskScore.toFixed(1)})` : "--"],
-    ["Most influential source/article", analytics.influential ? `${analytics.influential.sourceDomain || analytics.influential.source}: ${analytics.influential.title}` : "--"],
-    ["Data caveat summary", caveats.join(" ")]
+    ["Exposure leader", `${shortCompany(analytics.leaders.exposure)} by mentions`],
+    ["Weighted SOV leader", `${shortCompany(analytics.leaders.weighted)} by proxy-weighted exposure`],
+    ["Sentiment leader", `${shortCompany(analytics.leaders.sentiment)} by sentiment score`],
+    ["Tier 1 leader", `${shortCompany(analytics.leaders.tier1)} by Tier 1 mentions`],
+    ["Risk watch", analytics.biggestRiskTopic ? `${analytics.biggestRiskTopic.name} (${analytics.biggestRiskTopic.riskScore.toFixed(1)})` : "--"],
+    ["Dataset trace", `${nf.format(state.mentions.length)} loaded records; metadata says ${nf.format(metaCount)}`]
   ];
   document.querySelector("#leaderPanel").replaceChildren(...rows.map(([label, value]) => metricItem(label, value)));
 }
 
+function renderDecisionSummary(analytics) {
+  const rows = [
+    ["Exposure leader", shortCompany(analytics.leaders.exposure), COMPANIES.map((company) => `${shortCompany(company)} ${nf.format(analytics.byCompany[company].mentions)}`).join(" | ")],
+    ["Weighted SOV leader", shortCompany(analytics.leaders.weighted), COMPANIES.map((company) => `${shortCompany(company)} ${pf.format(analytics.byCompany[company].weightedSov)}`).join(" | ")],
+    ["Sentiment leader", shortCompany(analytics.leaders.sentiment), COMPANIES.map((company) => `${shortCompany(company)} ${analytics.byCompany[company].sentimentScore.toFixed(2)}`).join(" | ")],
+    ["Biggest risk area", analytics.biggestRiskTopic?.name || "--", analytics.biggestRiskTopic ? `risk score ${analytics.biggestRiskTopic.riskScore.toFixed(1)}` : "--"],
+    ["Most visible entity", analytics.visibleEntity?.entity || "--", analytics.visibleEntity ? `${nf.format(analytics.visibleEntity.mentions)} mentions` : "--"]
+  ];
+  document.querySelector("#decisionSummary").replaceChildren(...rows.map(([label, value, trace]) => {
+    const div = document.createElement("div");
+    div.className = "decision-item";
+    div.innerHTML = `<span>${esc(label)}</span><strong>${esc(value)}</strong><small>${esc(trace)}</small>`;
+    return div;
+  }));
+}
+
 function renderInsights(analytics) {
   const rows = [
-    ["Overall winner by mentions", analytics.leaders.exposure, "companyMentions / totalMentions"],
-    ["Overall winner by weighted SOV", analytics.leaders.weighted, "companyWeightedExposure / totalWeightedExposure"],
-    ["Sentiment winner", analytics.leaders.sentiment, "(positive - negative) / totalMentions"],
+    ["Overall winner by mentions", analytics.leaders.exposure, "share of voice = company mentions / total mentions"],
+    ["Overall winner by weighted SOV", analytics.leaders.weighted, "weighted SOV = company weightedExposure / total weightedExposure"],
+    ["Sentiment winner", analytics.leaders.sentiment, "sentiment score = (positive mentions - negative mentions) / total mentions"],
     ["Tier 1 media winner", analytics.leaders.tier1, "count of records where sourceTier is Tier 1"],
     ["Biggest topic gap in favor of Novo", analytics.topicGap.novo ? `${analytics.topicGap.novo.topic} (+${nf.format(Math.max(0, analytics.topicGap.novo.delta))})` : "--", "Novo topic mentions minus Lilly topic mentions"],
     ["Biggest topic gap in favor of Lilly", analytics.topicGap.lilly ? `${analytics.topicGap.lilly.topic} (+${nf.format(Math.max(0, analytics.topicGap.lilly.delta))})` : "--", "Lilly topic mentions minus Novo topic mentions"],
-    ["Highest-risk topic", analytics.biggestRiskTopic ? `${analytics.biggestRiskTopic.name} (${analytics.biggestRiskTopic.riskScore.toFixed(1)})` : "--", "mentions + negative x2 + Tier 1 x1.5 + authority / 25"],
+    ["Highest-risk topic", analytics.biggestRiskTopic ? `${analytics.biggestRiskTopic.name} (${analytics.biggestRiskTopic.riskScore.toFixed(1)})` : "--", "risk score = mentions + negative x2 + Tier 1 x1.5 + authority / 25"],
     ["Most visible product/molecule", analytics.visibleEntity ? `${analytics.visibleEntity.entity} (${nf.format(analytics.visibleEntity.mentions)})` : "--", "matched keyword or text mention count"],
     ["Most influential source", analytics.influential ? `${analytics.influential.sourceDomain || analytics.influential.source} (${nf.format(analytics.influential.sourceAuthority || 0)} authority)` : "--", "highest sourceAuthority, then weighted exposure"]
   ];
@@ -422,6 +430,11 @@ function renderKpis(analytics) {
 function renderMetadata() {
   const metadata = state.metadata || {};
   const lastUpdated = metadata.lastUpdated ? new Date(metadata.lastUpdated) : null;
+  const metadataCount = Number(metadata.recordCount || 0);
+  const mentionsLoaded = state.diagnostics.find((item) => item.key === "mentions")?.status === "loaded";
+  const metadataLoaded = state.diagnostics.find((item) => item.key === "metadata")?.status === "loaded";
+  const generatedPassed = metadataLoaded && mentionsLoaded && metadataCount === state.mentions.length && state.mentions.length > 0;
+  const pathsPassed = state.diagnostics.every((item) => item.path.startsWith("./data/generated/"));
   document.querySelector("#lastUpdated").textContent = lastUpdated ? dtf.format(lastUpdated) : "--";
   document.querySelector("#coverageWindow").textContent = `${metadata.coverageStart || "--"} to ${metadata.coverageEnd || "--"}`;
   document.querySelector("#recordCount").textContent = nf.format(metadata.recordCount || state.mentions.length || 0);
@@ -432,6 +445,10 @@ function renderMetadata() {
   document.querySelector("#proxyMetricFields").textContent = (metadata.proxyMetricFields || []).join(", ") || "--";
   document.querySelector("#dedupeMethod").textContent = metadata.deduplicationMethod || "Normalized URL, then title + date + sourceDomain.";
   document.querySelector("#falsePositiveHandling").textContent = metadata.falsePositiveHandling || "Standalone Novo/Lilly matches require GLP-1, obesity, diabetes, or pharma context.";
+  document.querySelector("#generatedValidation").textContent = generatedPassed ? "Passed" : "Needs check";
+  document.querySelector("#pathValidation").textContent = pathsPassed ? "Passed" : "Needs check";
+  document.querySelector("#recordCountCheck").textContent = metadataCount === state.mentions.length ? `Passed (${nf.format(state.mentions.length)})` : `Mismatch: metadata ${nf.format(metadataCount)} vs mentions ${nf.format(state.mentions.length)}`;
+  document.querySelector("#projectLinks").innerHTML = `<a href="https://github.com/timkok/important-change-the-dashboard-must-use" target="_blank" rel="noopener noreferrer">GitHub repo</a> | <a href="https://github.com/timkok/important-change-the-dashboard-must-use/actions/workflows/deploy-codex.yml" target="_blank" rel="noopener noreferrer">deploy workflow</a>`;
   const ageHours = lastUpdated ? (Date.now() - lastUpdated.getTime()) / 36e5 : Infinity;
   const badge = document.querySelector("#freshnessBadge");
   badge.textContent = ageHours <= 36 ? "Fresh" : "Needs refresh";
