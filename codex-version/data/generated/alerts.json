@@ -1,0 +1,8 @@
+[
+  {
+    "level": "warning",
+    "company": "All",
+    "title": "Data quality warning",
+    "message": "GDELT returned zero records for the configured queries."
+  }
+]

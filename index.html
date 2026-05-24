@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GLP-1 Media Exposure Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>GLP-1 Media Exposure Dashboard</h1>
+        <p>Real media coverage from generated static JSON files. No frontend API keys.</p>
+      </div>
+      <div class="toolbar" aria-label="Dashboard filters">
+        <select id="companyFilter" aria-label="Company">
+          <option value="All">All companies</option>
+          <option value="Novo Nordisk">Novo Nordisk</option>
+          <option value="Eli Lilly">Eli Lilly</option>
+        </select>
+        <select id="topicFilter" aria-label="Topic">
+          <option value="All">All topics</option>
+        </select>
+        <input id="searchInput" type="search" placeholder="Search titles, sources, keywords" aria-label="Search media mentions">
+      </div>
+    </header>
+
+    <main>
+      <section id="emptyState" class="empty-state" hidden>
+        <h2>No generated data found</h2>
+        <p>No generated data found. Run the GitHub Actions workflow or run scripts/build_dataset.py locally.</p>
+      </section>
+
+      <section id="dashboard" hidden>
+        <section class="status-grid" aria-label="Data status">
+          <article class="panel status-panel">
+            <div class="panel-heading">
+              <h2>Data Status</h2>
+              <span id="freshnessBadge" class="badge neutral">Checking</span>
+            </div>
+            <dl class="status-list">
+              <div><dt>Last updated</dt><dd id="lastUpdated">--</dd></div>
+              <div><dt>Coverage window</dt><dd id="coverageWindow">--</dd></div>
+              <div><dt>Total records</dt><dd id="recordCount">--</dd></div>
+              <div><dt>Metric type</dt><dd>Reach and GDELT engagement are proxies</dd></div>
+            </dl>
+            <div id="sourceHealth" class="source-health"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-heading">
+              <h2>Metric Disclosure</h2>
+            </div>
+            <ul id="metricDisclosure" class="disclosure-list"></ul>
+          </article>
+
+          <article class="panel">
+            <div class="panel-heading">
+              <h2>Known Limitations</h2>
+            </div>
+            <ul id="limitations" class="disclosure-list"></ul>
+          </article>
+        </section>
+
+        <section class="kpi-grid" aria-label="Key metrics">
+          <article class="kpi">
+            <span>Mentions</span>
+            <strong id="kpiMentions">0</strong>
+          </article>
+          <article class="kpi">
+            <span>Estimated Reach Proxy</span>
+            <strong id="kpiReach">0</strong>
+          </article>
+          <article class="kpi">
+            <span>Engagement Actuals / Imports</span>
+            <strong id="kpiEngagement">0</strong>
+          </article>
+          <article class="kpi">
+            <span>Average Sentiment</span>
+            <strong id="kpiSentiment">0.00</strong>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <article class="panel wide">
+            <div class="panel-heading">
+              <h2>90-Day Mention Trend</h2>
+              <span class="caption">Counts by article date</span>
+            </div>
+            <div id="timelineChart" class="timeline-chart" role="img" aria-label="Daily mention count bar chart"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-heading">
+              <h2>Topic Mix</h2>
+              <span class="caption">Keyword-rule buckets</span>
+            </div>
+            <div id="topicChart" class="bar-list"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-heading">
+              <h2>Source Summary</h2>
+              <span class="caption">Deduplicated by URL</span>
+            </div>
+            <div id="sourceSummary" class="source-summary"></div>
+          </article>
+        </section>
+
+        <section class="panel">
+          <div class="panel-heading">
+            <h2>Alerts</h2>
+            <span class="caption">Generated from real records only</span>
+          </div>
+          <div id="alerts" class="alerts"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-heading">
+            <h2>Real Article Mentions</h2>
+            <span id="visibleCount" class="caption">0 records</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Company</th>
+                  <th>Topic</th>
+                  <th>Source</th>
+                  <th>Title</th>
+                  <th>Sentiment</th>
+                  <th>Reach Proxy</th>
+                </tr>
+              </thead>
+              <tbody id="mentionsTable"></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

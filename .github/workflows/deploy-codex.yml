@@ -1,0 +1,79 @@
+name: Deploy Codex media dashboard
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "codex-version/**"
+      - ".github/workflows/deploy-codex.yml"
+  schedule:
+    - cron: "15 10 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "codex-pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r codex-version/scripts/requirements.txt
+
+      - name: Fetch real data and build generated JSON
+        run: python codex-version/scripts/build_dataset.py
+        env:
+          MEDIASTACK_API_KEY: ${{ secrets.MEDIASTACK_API_KEY }}
+          NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
+          BRANDWATCH_TOKEN: ${{ secrets.BRANDWATCH_TOKEN }}
+          MELTWATER_TOKEN: ${{ secrets.MELTWATER_TOKEN }}
+          TALKWALKER_TOKEN: ${{ secrets.TALKWALKER_TOKEN }}
+
+      - name: Verify generated data exists
+        run: |
+          test -s codex-version/data/generated/mentions.json
+          test -s codex-version/data/generated/metadata.json
+          test -s codex-version/data/generated/daily_counts.json
+          test -s codex-version/data/generated/source_summary.json
+          test -s codex-version/data/generated/topic_summary.json
+          test -s codex-version/data/generated/alerts.json
+
+      - name: Ensure nojekyll
+        run: touch codex-version/.nojekyll
+
+      - name: Prepare Pages artifact
+        run: |
+          mkdir -p public
+          cp -R codex-version public/codex-version
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Codex artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

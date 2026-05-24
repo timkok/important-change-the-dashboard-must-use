@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Codex Media Exposure Dashboard</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="version-label">Codex version</p>
+        <h1>GLP-1 Media Exposure Dashboard</h1>
+        <p>Static GitHub Pages dashboard powered by generated real-data JSON from GitHub Actions.</p>
+      </div>
+      <nav class="tabs" aria-label="Dashboard sections">
+        <button class="tab active" data-tab="overview">Overview</button>
+        <button class="tab" data-tab="mentions">Mentions</button>
+        <button class="tab" data-tab="quality">Data Quality</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="loadError" class="empty-state" hidden>
+        <h2>Data Quality error</h2>
+        <p>Generated data files were not found on the deployed site. Check the GitHub Actions data pipeline and Pages artifact.</p>
+      </section>
+
+      <section id="app" hidden>
+        <section class="filters" aria-label="Filters">
+          <select id="companyFilter" aria-label="Company">
+            <option value="All">All companies</option>
+            <option value="Novo Nordisk">Novo Nordisk</option>
+            <option value="Eli Lilly">Eli Lilly</option>
+          </select>
+          <select id="topicFilter" aria-label="Topic">
+            <option value="All">All topics</option>
+          </select>
+          <input id="searchInput" type="search" placeholder="Search titles, sources, keywords" aria-label="Search mentions">
+        </section>
+
+        <section class="tab-panel" data-panel="overview">
+          <div class="kpi-grid">
+            <article class="kpi"><span>Mentions</span><strong id="kpiMentions">0</strong></article>
+            <article class="kpi"><span>Reach Proxy</span><strong id="kpiReach">0</strong></article>
+            <article class="kpi"><span>Engagement</span><strong id="kpiEngagement">0</strong></article>
+            <article class="kpi"><span>Average Sentiment</span><strong id="kpiSentiment">0.00</strong></article>
+          </div>
+
+          <div id="zeroState" class="notice" hidden>
+            <strong>No real records in the generated dataset.</strong>
+            <span>The dashboard is intentionally empty because the pipeline did not receive usable records from real sources.</span>
+          </div>
+
+          <section class="grid">
+            <article class="panel wide">
+              <div class="panel-heading"><h2>90-Day Mention Trend</h2><span>Generated counts</span></div>
+              <div id="timelineChart" class="timeline-chart" role="img" aria-label="Daily mention trend"></div>
+            </article>
+            <article class="panel">
+              <div class="panel-heading"><h2>Topic Summary</h2><span>Rule-based buckets</span></div>
+              <div id="topicChart" class="bar-list"></div>
+            </article>
+            <article class="panel">
+              <div class="panel-heading"><h2>Source Summary</h2><span>Deduplicated</span></div>
+              <div id="sourceSummary" class="stack"></div>
+            </article>
+          </section>
+        </section>
+
+        <section class="tab-panel" data-panel="mentions" hidden>
+          <article class="panel">
+            <div class="panel-heading"><h2>Real Article Mentions</h2><span id="visibleCount">0 records</span></div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Company</th>
+                    <th>Topic</th>
+                    <th>Source</th>
+                    <th>Title</th>
+                    <th>Sentiment</th>
+                    <th>Metrics</th>
+                  </tr>
+                </thead>
+                <tbody id="mentionsTable"></tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+
+        <section class="tab-panel" data-panel="quality" hidden>
+          <section class="quality-grid">
+            <article class="panel">
+              <div class="panel-heading"><h2>Data Quality</h2><span id="freshnessBadge" class="badge">Checking</span></div>
+              <dl class="status-list">
+                <div><dt>Last updated</dt><dd id="lastUpdated">--</dd></div>
+                <div><dt>Coverage</dt><dd id="coverageWindow">--</dd></div>
+                <div><dt>Record count</dt><dd id="recordCount">--</dd></div>
+                <div><dt>Version</dt><dd id="version">--</dd></div>
+              </dl>
+            </article>
+            <article class="panel">
+              <div class="panel-heading"><h2>Sources</h2><span>Generated metadata</span></div>
+              <div id="sourceStatus" class="stack"></div>
+            </article>
+            <article class="panel">
+              <div class="panel-heading"><h2>Proxy Metric Caveat</h2><span>Required disclosure</span></div>
+              <p class="muted">GDELT does not provide true impressions or social engagement. Reach, engagement, and sourceAuthority are proxy fields for GDELT records. Engagement is 0 for GDELT unless imported data provides actual values.</p>
+              <ul id="warnings" class="list"></ul>
+            </article>
+            <article class="panel">
+              <div class="panel-heading"><h2>Alerts</h2><span>Generated</span></div>
+              <div id="alerts" class="stack"></div>
+            </article>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

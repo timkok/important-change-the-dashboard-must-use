@@ -1,0 +1,31 @@
+{
+  "lastUpdated": "2026-05-24T15:08:06.566299+00:00",
+  "coverageStart": "2026-02-24",
+  "coverageEnd": "2026-05-24",
+  "recordCount": 0,
+  "sourcesUsed": [],
+  "sourcesUnavailable": [
+    "Brandwatch",
+    "Brandwatch / Meltwater / Talkwalker CSV exports",
+    "GDELT DOC 2.0 - Eli Lilly",
+    "GDELT DOC 2.0 - Novo Nordisk",
+    "Google Trends",
+    "Mediastack",
+    "Meltwater",
+    "NewsAPI",
+    "Talkwalker"
+  ],
+  "proxyMetricFields": [
+    "reach",
+    "engagement",
+    "sourceAuthority"
+  ],
+  "warnings": [
+    "GDELT returned zero records for the configured queries."
+  ],
+  "queryDefinitions": {
+    "Novo Nordisk": "(\"Novo Nordisk\" OR Ozempic OR Wegovy OR Rybelsus OR semaglutide OR \"oral semaglutide\")",
+    "Eli Lilly": "(\"Eli Lilly\" OR Mounjaro OR Zepbound OR tirzepatide OR orforglipron OR retatrutide)"
+  },
+  "version": "codex"
+}

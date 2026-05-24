@@ -1,0 +1,141 @@
+{
+  "lastUpdated": "2026-05-24T14:57:44.128978+00:00",
+  "coverageWindow": {
+    "days": 90,
+    "start": null,
+    "end": null
+  },
+  "recordCount": 0,
+  "recordsBySource": {},
+  "dataSources": [
+    {
+      "name": "GDELT DOC 2.0 - Novo Nordisk",
+      "rawSource": "GDELT",
+      "available": false,
+      "recordsFetched": 0,
+      "errors": [
+        "2026-02-23 to 2026-03-09: ConnectTimeout",
+        "2026-03-09 to 2026-03-23: ReadTimeout",
+        "2026-03-23 to 2026-04-06: ReadTimeout",
+        "2026-04-06 to 2026-04-20: ConnectTimeout",
+        "2026-04-20 to 2026-05-04: ConnectTimeout",
+        "2026-05-04 to 2026-05-18: ConnectTimeout",
+        "2026-05-18 to 2026-05-24: ConnectTimeout"
+      ],
+      "credentialRequired": false,
+      "notes": "Public GDELT DOC 2.0 article search. Reach and engagement are dashboard proxies, not measured impressions."
+    },
+    {
+      "name": "GDELT DOC 2.0 - Eli Lilly",
+      "rawSource": "GDELT",
+      "available": false,
+      "recordsFetched": 0,
+      "errors": [
+        "2026-02-23 to 2026-03-09: ConnectTimeout",
+        "2026-03-09 to 2026-03-23: ConnectTimeout",
+        "2026-03-23 to 2026-04-06: ConnectTimeout",
+        "2026-04-06 to 2026-04-20: ReadTimeout",
+        "2026-04-20 to 2026-05-04: ConnectTimeout",
+        "2026-05-04 to 2026-05-18: ConnectTimeout",
+        "2026-05-18 to 2026-05-24: ConnectTimeout"
+      ],
+      "credentialRequired": false,
+      "notes": "Public GDELT DOC 2.0 article search. Reach and engagement are dashboard proxies, not measured impressions."
+    },
+    {
+      "name": "Brandwatch / Meltwater / Talkwalker CSV exports",
+      "rawSource": "CSV",
+      "available": false,
+      "recordsFetched": 0,
+      "files": [],
+      "errors": [],
+      "credentialRequired": false,
+      "notes": "CSV export support is optional. Place CSV files in data/imports with the documented columns."
+    },
+    {
+      "name": "Mediastack",
+      "rawSource": "Mediastack",
+      "available": false,
+      "recordsFetched": 0,
+      "credentialRequired": true,
+      "configured": false,
+      "errors": [],
+      "notes": "Skipped unless a server-side fetcher and GitHub Secret are configured. Keys are never exposed to frontend JavaScript."
+    },
+    {
+      "name": "NewsAPI",
+      "rawSource": "NewsAPI",
+      "available": false,
+      "recordsFetched": 0,
+      "credentialRequired": true,
+      "configured": false,
+      "errors": [],
+      "notes": "Skipped unless a server-side fetcher and GitHub Secret are configured. Keys are never exposed to frontend JavaScript."
+    },
+    {
+      "name": "Brandwatch API",
+      "rawSource": "Brandwatch",
+      "available": false,
+      "recordsFetched": 0,
+      "credentialRequired": true,
+      "configured": false,
+      "errors": [],
+      "notes": "Skipped unless a server-side fetcher and GitHub Secret are configured. Keys are never exposed to frontend JavaScript."
+    },
+    {
+      "name": "Meltwater API",
+      "rawSource": "Meltwater",
+      "available": false,
+      "recordsFetched": 0,
+      "credentialRequired": true,
+      "configured": false,
+      "errors": [],
+      "notes": "Skipped unless a server-side fetcher and GitHub Secret are configured. Keys are never exposed to frontend JavaScript."
+    },
+    {
+      "name": "Talkwalker API",
+      "rawSource": "Talkwalker",
+      "available": false,
+      "recordsFetched": 0,
+      "credentialRequired": true,
+      "configured": false,
+      "errors": [],
+      "notes": "Skipped unless a server-side fetcher and GitHub Secret are configured. Keys are never exposed to frontend JavaScript."
+    },
+    {
+      "name": "Google Trends via pytrends",
+      "rawSource": "Google Trends",
+      "available": false,
+      "recordsFetched": 0,
+      "credentialRequired": false,
+      "configured": false,
+      "errors": [
+        "Optional source not enabled in requirements."
+      ],
+      "notes": "Unofficial optional source. If enabled later, write data/generated/search_trends.json and keep failures non-blocking."
+    }
+  ],
+  "missingSources": [
+    "Brandwatch / Meltwater / Talkwalker CSV exports",
+    "Brandwatch API",
+    "GDELT DOC 2.0 - Eli Lilly",
+    "GDELT DOC 2.0 - Novo Nordisk",
+    "Google Trends via pytrends",
+    "Mediastack",
+    "Meltwater API",
+    "NewsAPI",
+    "Talkwalker API"
+  ],
+  "metricDisclosure": {
+    "reach": "Proxy for GDELT records based on source tier and authority. CSV imports may contain actuals if supplied by the export owner.",
+    "engagement": "Zero for GDELT records because GDELT does not provide true engagement. CSV/API imports may provide actuals.",
+    "sourceAuthority": "Rule-based proxy using source domain category."
+  },
+  "knownLimitations": [
+    "GDELT article search is broad online news coverage, not paid media monitoring.",
+    "GDELT does not provide true impressions, reach, or social engagement.",
+    "Topic and fallback sentiment classification use deterministic keyword rules.",
+    "Standalone Novo and Lilly matches are filtered with GLP-1, diabetes, pharma, or brand context to reduce false positives.",
+    "Optional paid/API-key sources are skipped unless server-side fetchers and GitHub Secrets are configured."
+  ]
+}
