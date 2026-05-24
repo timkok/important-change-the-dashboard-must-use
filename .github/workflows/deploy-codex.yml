@@ -9,6 +9,19 @@ on:
   schedule:
     - cron: "15 10 * * *"
   workflow_dispatch:
+    inputs:
+      full_refresh:
+        description: "Run a full 90-day GDELT refresh"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+      lookback_days:
+        description: "Incremental lookback days for scheduled/default runs"
+        required: false
+        default: "5"
 
 permissions:
   contents: read
@@ -43,6 +56,8 @@ jobs:
       - name: Fetch real data and build generated JSON
         run: python codex-version/scripts/build_dataset.py
         env:
+          FULL_REFRESH: ${{ github.event.inputs.full_refresh || 'false' }}
+          GDELT_LOOKBACK_DAYS: ${{ github.event.inputs.lookback_days || '5' }}
           MEDIASTACK_API_KEY: ${{ secrets.MEDIASTACK_API_KEY }}
           NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
           BRANDWATCH_TOKEN: ${{ secrets.BRANDWATCH_TOKEN }}

@@ -1,1 +1,121 @@
-[]
+[
+  {
+    "company": "Eli Lilly",
+    "topic": "Other",
+    "mentions": 61,
+    "averageSentimentScore": 0.0,
+    "reach": 11050000
+  },
+  {
+    "company": "Eli Lilly",
+    "topic": "Pipeline / next-generation drugs",
+    "mentions": 32,
+    "averageSentimentScore": 0.042,
+    "reach": 4900000
+  },
+  {
+    "company": "Eli Lilly",
+    "topic": "Earnings / revenue / market share",
+    "mentions": 25,
+    "averageSentimentScore": 0.036,
+    "reach": 5700000
+  },
+  {
+    "company": "Eli Lilly",
+    "topic": "Weight loss efficacy",
+    "mentions": 21,
+    "averageSentimentScore": 0.021,
+    "reach": 3200000
+  },
+  {
+    "company": "Eli Lilly",
+    "topic": "GLP-1 market competition",
+    "mentions": 20,
+    "averageSentimentScore": -0.09,
+    "reach": 2200000
+  },
+  {
+    "company": "Eli Lilly",
+    "topic": "Drug pricing / insurance / access",
+    "mentions": 12,
+    "averageSentimentScore": 0.075,
+    "reach": 1950000
+  },
+  {
+    "company": "Eli Lilly",
+    "topic": "Legal / regulatory",
+    "mentions": 11,
+    "averageSentimentScore": -0.041,
+    "reach": 1100000
+  },
+  {
+    "company": "Eli Lilly",
+    "topic": "Side effects / safety",
+    "mentions": 10,
+    "averageSentimentScore": -0.27,
+    "reach": 1000000
+  },
+  {
+    "company": "Eli Lilly",
+    "topic": "Oral GLP-1",
+    "mentions": 9,
+    "averageSentimentScore": 0.0,
+    "reach": 1250000
+  },
+  {
+    "company": "Eli Lilly",
+    "topic": "Cardiovascular outcomes",
+    "mentions": 7,
+    "averageSentimentScore": 0.064,
+    "reach": 700000
+  },
+  {
+    "company": "Novo Nordisk",
+    "topic": "GLP-1 market competition",
+    "mentions": 22,
+    "averageSentimentScore": -0.02,
+    "reach": 2200000
+  },
+  {
+    "company": "Novo Nordisk",
+    "topic": "Legal / regulatory",
+    "mentions": 12,
+    "averageSentimentScore": 0.037,
+    "reach": 1200000
+  },
+  {
+    "company": "Novo Nordisk",
+    "topic": "Oral GLP-1",
+    "mentions": 5,
+    "averageSentimentScore": 0.0,
+    "reach": 900000
+  },
+  {
+    "company": "Novo Nordisk",
+    "topic": "Weight loss efficacy",
+    "mentions": 4,
+    "averageSentimentScore": 0.0,
+    "reach": 800000
+  },
+  {
+    "company": "Novo Nordisk",
+    "topic": "Other",
+    "mentions": 4,
+    "averageSentimentScore": 0.113,
+    "reach": 1000000
+  },
+  {
+    "company": "Novo Nordisk",
+    "topic": "Earnings / revenue / market share",
+    "mentions": 2,
+    "averageSentimentScore": 0.0,
+    "reach": 200000
+  },
+  {
+    "company": "Novo Nordisk",
+    "topic": "Food industry impact",
+    "mentions": 2,
+    "averageSentimentScore": 0.0,
+    "reach": 200000
+  }
+]

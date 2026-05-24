@@ -1,9 +1,11 @@
 {
-  "lastUpdated": "2026-05-24T15:08:06.566299+00:00",
+  "lastUpdated": "2026-05-24T15:59:43.712778+00:00",
   "coverageStart": "2026-02-24",
   "coverageEnd": "2026-05-24",
-  "recordCount": 0,
-  "sourcesUsed": [],
+  "recordCount": 259,
+  "sourcesUsed": [
+    "GDELT"
+  ],
   "sourcesUnavailable": [
     "Brandwatch",
     "Brandwatch / Meltwater / Talkwalker CSV exports",
@@ -21,11 +23,20 @@
     "sourceAuthority"
   ],
   "warnings": [
-    "GDELT returned zero records for the configured queries."
+    "GDELT returned zero new records; preserved existing healthy generated dataset."
   ],
   "queryDefinitions": {
     "Novo Nordisk": "(\"Novo Nordisk\" OR Ozempic OR Wegovy OR Rybelsus OR semaglutide OR \"oral semaglutide\")",
     "Eli Lilly": "(\"Eli Lilly\" OR Mounjaro OR Zepbound OR tirzepatide OR orforglipron OR retatrutide)"
   },
-  "version": "codex"
+  "deduplicationMethod": "Deduplicated by normalized URL first, then title + date + sourceDomain when URL is missing.",
+  "falsePositiveHandling": "Standalone Novo/Lilly matches require GLP-1, obesity, diabetes, or pharma context before inclusion.",
+  "version": "codex",
+  "previousRecordCount": 259,
+  "newlyFetchedCount": 0,
+  "deduplicatedCount": 0,
+  "finalRecordCount": 259,
+  "fetchMode": "incremental",
+  "preservedExistingData": true,
+  "csvImportErrors": []
 }

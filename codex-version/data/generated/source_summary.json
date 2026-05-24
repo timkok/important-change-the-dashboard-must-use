@@ -1,1 +1,1154 @@
-[]
+[
+  {
+    "source": "finance.yahoo.com",
+    "mentions": 21,
+    "sourceTier": "Finance",
+    "channel": "Finance Media",
+    "reach": 6300000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "dailypolitical.com",
+    "mentions": 17,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 1700000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "fool.com",
+    "mentions": 17,
+    "sourceTier": "Finance",
+    "channel": "Finance Media",
+    "reach": 5100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "dailymail.com",
+    "mentions": 10,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 1000000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "benzinga.com",
+    "mentions": 9,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 900000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "insidermonkey.com",
+    "mentions": 9,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 900000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "tickerreport.com",
+    "mentions": 6,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 600000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "cnbc.com",
+    "mentions": 6,
+    "sourceTier": "Tier 1",
+    "channel": "News",
+    "reach": 6000000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "prnewswire.com",
+    "mentions": 5,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 500000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "defenseworld.net",
+    "mentions": 5,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 500000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "el-balad.com",
+    "mentions": 4,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 400000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "marketscreener.com",
+    "mentions": 4,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 400000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "economictimes.indiatimes.com",
+    "mentions": 4,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 400000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "medscape.com",
+    "mentions": 4,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 400000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "themarketsdaily.com",
+    "mentions": 4,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 400000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "biopharmadive.com",
+    "mentions": 3,
+    "sourceTier": "Trade",
+    "channel": "Trade Media",
+    "reach": 750000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "endocrinologyadvisor.com",
+    "mentions": 3,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 300000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "morningstar.com",
+    "mentions": 3,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 300000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "dailymail.co.uk",
+    "mentions": 3,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 300000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "indianexpress.com",
+    "mentions": 2,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 200000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "medcitynews.com",
+    "mentions": 2,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 200000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "scientificamerican.com",
+    "mentions": 2,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 200000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "finanznachrichten.de",
+    "mentions": 2,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 200000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "stockhouse.com",
+    "mentions": 2,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 200000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "dailyexcelsior.com",
+    "mentions": 2,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 200000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "gdnonline.com",
+    "mentions": 2,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 200000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "miragenews.com",
+    "mentions": 2,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 200000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "manilatimes.net",
+    "mentions": 2,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 200000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "mirror.co.uk",
+    "mentions": 2,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 200000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "rediff.com",
+    "mentions": 2,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 200000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "timesofindia.indiatimes.com",
+    "mentions": 2,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 200000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "bristolpost.co.uk",
+    "mentions": 2,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 200000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "theweek.in",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "kpq.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "97rockonline.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "religionnews.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "proactiveinvestors.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "pharmaceutical-journal.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "wknofm.org",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "ksmu.org",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "wkyufm.org",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "bioworld.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "christianitytoday.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "nbcbayarea.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "nbcmiami.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "upi.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "fox32chicago.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "time.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "businesstoday.in",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "nbcdfw.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "nbcphiladelphia.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "bostonglobe.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "nbcsandiego.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "wfmz.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "legalnewsline.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "investegate.co.uk",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "tennesseedaily.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "europesun.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "pr-inside.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "californiatelegraph.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "news-medical.net",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "thedailyrecord.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "kristeligt-dagblad.dk",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "journalrecord.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "bioxconomy.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "sbs.com.au",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "northbaynipissing.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "simcoe.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "ourwindsor.ca",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "newhamburgindependent.ca",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "niagarathisweek.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "durhamregion.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "pharmiweb.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "yorkregion.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "parrysound.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "ibtimes.co.uk",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "montrealgazette.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "tribune.com.pk",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "wtsp.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "wthr.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "kcentv.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "kvue.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "cbs8.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "allkpop.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "1057thepoint.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "cphpost.dk",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "flipso.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "thenationalnews.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "rnz.co.nz",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "abc.net.au",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "everydayhealth.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "healio.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "wishtv.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "freepressjournal.in",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "wenatcheeworld.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "thelooker.thedailybeast.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "94hjy.iheart.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "95wxtk.iheart.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "mix931.iheart.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "mykix1009.iheart.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "b101.iheart.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "femalefirst.co.uk",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "newsradiori.iheart.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "hindustantimes.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "tribuneindia.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "ibtimes.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "hngn.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "news.az",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "seekingalpha.com",
+    "mentions": 1,
+    "sourceTier": "Finance",
+    "channel": "Finance Media",
+    "reach": 300000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "wvxu.org",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "wlfi.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "foreignpolicyjournal.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "wbiw.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "rttnews.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "lvb.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "portfolio.hu",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "psychiatryadvisor.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "timeslive.co.za",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "newsweek.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "investorplace.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "irishnews.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "prunderground.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "medindia.net",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "dailystar.co.uk",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "plymouthherald.co.uk",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "ok.co.uk",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "getsurrey.co.uk",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "walesonline.co.uk",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  }
+]

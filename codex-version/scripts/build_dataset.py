@@ -32,18 +32,45 @@ def write_json(name: str, value: Any) -> None:
     (GENERATED_DIR / name).write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def read_existing_mentions() -> list[dict[str, Any]]:
+    path = GENERATED_DIR / "mentions.json"
+    if not path.is_file() or path.stat().st_size == 0:
+        return []
+    try:
+        value = json.loads(path.read_text(encoding="utf-8"))
+        return value if isinstance(value, list) else []
+    except json.JSONDecodeError:
+        return []
+
+
+def dedupe_key(record: dict[str, Any]) -> str:
+    url = (record.get("url") or "").strip().lower()
+    if url:
+        return f"url:{url}"
+    title = (record.get("title") or "").strip().lower()
+    date = (record.get("date") or "").strip()
+    domain = (record.get("sourceDomain") or record.get("source") or "").strip().lower()
+    return f"title:{title}|date:{date}|domain:{domain}"
+
+
 def dedupe(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
     seen: set[str] = set()
     output: list[dict[str, Any]] = []
     for record in records:
-        key = (record.get("url") or "").strip().lower()
-        if not key:
-            key = stable_id(record.get("title", ""), record.get("date", ""), record.get("company", ""))
+        key = dedupe_key(record)
         if key in seen:
             continue
         seen.add(key)
         output.append(record)
     return sorted(output, key=lambda row: row.get("date", ""), reverse=True)
+
+
+def rolling_window(records: list[dict[str, Any]], days: int, end_date: datetime.date) -> list[dict[str, Any]]:
+    start_date = end_date - timedelta(days=days - 1)
+    return [
+        record for record in records
+        if start_date.isoformat() <= str(record.get("date", ""))[:10] <= end_date.isoformat()
+    ]
 
 
 def daily_counts(records: list[dict[str, Any]], days: int) -> list[dict[str, Any]]:
@@ -126,7 +153,14 @@ def optional_statuses() -> list[dict[str, Any]]:
     return rows
 
 
-def metadata(records: list[dict[str, Any]], statuses: list[dict[str, Any]], warnings: list[str], coverage_start: str, coverage_end: str) -> dict[str, Any]:
+def metadata(
+    records: list[dict[str, Any]],
+    statuses: list[dict[str, Any]],
+    warnings: list[str],
+    coverage_start: str,
+    coverage_end: str,
+    pipeline_stats: dict[str, Any],
+) -> dict[str, Any]:
     return {
         "lastUpdated": datetime.now(timezone.utc).isoformat(),
         "coverageStart": coverage_start,
@@ -137,41 +171,69 @@ def metadata(records: list[dict[str, Any]], statuses: list[dict[str, Any]], warn
         "proxyMetricFields": ["reach", "engagement", "sourceAuthority"],
         "warnings": warnings,
         "queryDefinitions": QUERY_DEFINITIONS,
+        "deduplicationMethod": "Deduplicated by normalized URL first, then title + date + sourceDomain when URL is missing.",
+        "falsePositiveHandling": "Standalone Novo/Lilly matches require GLP-1, obesity, diabetes, or pharma context before inclusion.",
         "version": "codex",
+        **pipeline_stats,
     }
 
 
 def main() -> int:
     days = int(os.getenv("GDELT_DAYS", "90"))
+    lookback_days = int(os.getenv("GDELT_LOOKBACK_DAYS", "5"))
+    full_refresh = os.getenv("FULL_REFRESH", "false").lower() == "true"
+    fetch_days = days if full_refresh else max(3, min(lookback_days, 7))
+    fetch_mode = "full" if full_refresh else "incremental"
     coverage_end = datetime.now(timezone.utc).date()
     coverage_start = coverage_end - timedelta(days=days - 1)
-    records: list[dict[str, Any]] = []
+    existing_records = read_existing_mentions()
+    fetched_records: list[dict[str, Any]] = []
     statuses: list[dict[str, Any]] = []
     warnings: list[str] = []
 
-    gdelt_by_company, gdelt_statuses = fetch_all_gdelt(days)
+    gdelt_by_company, gdelt_statuses = fetch_all_gdelt(fetch_days)
     statuses.extend(gdelt_statuses)
     for company, articles in gdelt_by_company.items():
         for article in articles:
             normalized = normalize_gdelt_article(article, company)
             if normalized:
-                records.append(normalized)
+                fetched_records.append(normalized)
 
     csv_records, csv_status = load_csv_imports(IMPORTS_DIR)
-    records.extend(csv_records)
     statuses.append(csv_status)
     statuses.extend(optional_statuses())
 
-    records = dedupe(records)
+    previous_count = len(existing_records)
+    newly_fetched_count = len(fetched_records) + len(csv_records)
+    if full_refresh and fetched_records:
+        candidate_records = [*fetched_records, *csv_records]
+    else:
+        candidate_records = [*existing_records, *fetched_records, *csv_records]
+    deduped_records = dedupe(candidate_records)
+    deduplicated_count = len(candidate_records) - len(deduped_records)
+    records = rolling_window(deduped_records, days, coverage_end)
+    preserved_existing = bool(existing_records) and not fetched_records
+    if preserved_existing:
+        warnings.append("GDELT returned zero new records; preserved existing healthy generated dataset.")
     if not records:
         warnings.append("GDELT returned zero records for the configured queries.")
+
+    pipeline_stats = {
+        "previousRecordCount": previous_count,
+        "newlyFetchedCount": newly_fetched_count,
+        "deduplicatedCount": deduplicated_count,
+        "finalRecordCount": len(records),
+        "fetchMode": fetch_mode,
+        "preservedExistingData": preserved_existing,
+        "csvImportErrors": csv_status.get("errors", []),
+    }
 
     write_json("mentions.json", records)
     write_json("daily_counts.json", daily_counts(records, days))
     write_json("source_summary.json", source_summary(records))
     write_json("topic_summary.json", topic_summary(records))
     write_json("alerts.json", alerts(records, warnings))
-    write_json("metadata.json", metadata(records, statuses, warnings, coverage_start.isoformat(), coverage_end.isoformat()))
+    write_json("metadata.json", metadata(records, statuses, warnings, coverage_start.isoformat(), coverage_end.isoformat(), pipeline_stats))
 
     missing_or_empty = [name for name in REQUIRED_FILES if not (GENERATED_DIR / name).is_file() or (GENERATED_DIR / name).stat().st_size == 0]
     if missing_or_empty:

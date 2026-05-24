@@ -162,7 +162,18 @@ def normalize_gdelt_article(article: dict[str, Any], company: str) -> dict[str, 
     }
 
 
-def normalize_csv_row(row: dict[str, Any]) -> dict[str, Any] | None:
+def supplied_number(row: dict[str, Any], key: str) -> bool:
+    value = row.get(key)
+    if value in (None, ""):
+        return False
+    try:
+        float(value)
+        return True
+    except (TypeError, ValueError):
+        return False
+
+
+def normalize_csv_row(row: dict[str, Any], raw_source: str = "CSV") -> dict[str, Any] | None:
     company = (row.get("company") or "").strip()
     if company not in COMPANIES:
         return None
@@ -198,9 +209,9 @@ def normalize_csv_row(row: dict[str, Any]) -> dict[str, Any] | None:
         "engagement": int(float(row.get("engagement") or 0)),
         "sourceAuthority": int(float(row.get("sourceAuthority") or authority)),
         "matchedKeywords": matched,
-        "rawSource": "CSV",
+        "rawSource": (row.get("rawSource") or raw_source or "CSV").strip(),
         "language": None,
         "country": None,
-        "isProxyMetrics": False,
+        "isProxyMetrics": not (supplied_number(row, "reach") or supplied_number(row, "engagement")),
         "dataQualityNotes": ["CSV metrics are treated as imported values when supplied; missing metric fields use source-tier defaults."],
     }
