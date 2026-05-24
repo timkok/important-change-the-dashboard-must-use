@@ -42,7 +42,7 @@ jobs:
             if [ -f media-dashboard-comparison/codex/scripts/requirements.txt ]; then
               pip install -r media-dashboard-comparison/codex/scripts/requirements.txt
             fi
-            python media-dashboard-comparison/codex/scripts/build_dataset.py
+            python -u media-dashboard-comparison/codex/scripts/build_dataset.py
           else
             echo "No Codex dataset builder found yet."
           fi
@@ -52,6 +52,10 @@ jobs:
           BRANDWATCH_TOKEN: ${{ secrets.BRANDWATCH_TOKEN }}
           MELTWATER_TOKEN: ${{ secrets.MELTWATER_TOKEN }}
           TALKWALKER_TOKEN: ${{ secrets.TALKWALKER_TOKEN }}
+          LOOKBACK_DAYS: 7
+          GDELT_DAYS: 7
+          MAX_RECORDS_PER_COMPANY: 50
+          PIPELINE_TIMEOUT_SECONDS: 180
 
       - name: Install Antigravity Python dependencies
         run: |
@@ -59,13 +63,17 @@ jobs:
           pip install -r media-dashboard-comparison/antigravity/scripts/requirements.txt
 
       - name: Build Antigravity real dataset
-        run: python media-dashboard-comparison/antigravity/scripts/build_dataset.py
+        run: python -u media-dashboard-comparison/antigravity/scripts/build_dataset.py
         env:
           MEDIASTACK_API_KEY: ${{ secrets.MEDIASTACK_API_KEY }}
           NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
           BRANDWATCH_TOKEN: ${{ secrets.BRANDWATCH_TOKEN }}
           MELTWATER_TOKEN: ${{ secrets.MELTWATER_TOKEN }}
           TALKWALKER_TOKEN: ${{ secrets.TALKWALKER_TOKEN }}
+          LOOKBACK_DAYS: 7
+          GDELT_DAYS: 7
+          MAX_RECORDS_PER_COMPANY: 50
+          PIPELINE_TIMEOUT_SECONDS: 180
 
       - name: Verify Antigravity generated data exists
         run: |

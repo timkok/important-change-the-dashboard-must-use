@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 import time
 from datetime import datetime
 from typing import Any
@@ -19,12 +20,19 @@ def fetch_gdelt_window(
     start: datetime,
     end: datetime,
     max_records: int = 250,
-    retries: int = 4
+    retries: int = 1
 ) -> tuple[list[dict[str, Any]], list[str]]:
     """
     Fetch articles from GDELT DOC 2.0 API for a specific date window.
-    Implements retry with exponential backoff for transient HTTP errors.
+    Implements a strict timeout of 5 seconds to prevent hangs.
     """
+    env_max = os.environ.get("MAX_RECORDS_PER_COMPANY")
+    if env_max:
+        try:
+            max_records = int(env_max)
+        except ValueError:
+            pass
+
     params = {
         "query": query,
         "mode": "artlist",
@@ -36,12 +44,14 @@ def fetch_gdelt_window(
     }
     warnings: list[str] = []
     
-    for attempt in range(1, retries + 1):
+    # Strictly bound retries to 1
+    max_attempts = 1
+    
+    for attempt in range(1, max_attempts + 1):
         try:
-            # GDELT can be sluggish, set timeout to 30s
-            response = requests.get(GDELT_ENDPOINT, params=params, timeout=30)
+            # Short timeout of 15s to avoid hanging
+            response = requests.get(GDELT_ENDPOINT, params=params, timeout=15)
             
-            # 429 and 5xx are transient errors we should retry
             if response.status_code in {429, 500, 502, 503, 504}:
                 raise GDELTFetchError(f"GDELT transient HTTP {response.status_code}")
                 
@@ -51,14 +61,12 @@ def fetch_gdelt_window(
             return articles, warnings
             
         except Exception as exc:
-            if attempt == retries:
+            if attempt == max_attempts:
                 warnings.append(
-                    f"GDELT fetch failed for window {start.date()} to {end.date()} after {retries} attempts: {exc}"
+                    f"GDELT fetch failed for window {start.date()} to {end.date()}: {exc}"
                 )
                 return [], warnings
             
-            # Exponential backoff: 2s, 4s, 8s...
-            sleep_time = 2 ** attempt
-            time.sleep(sleep_time)
+            time.sleep(1)
             
     return [], warnings

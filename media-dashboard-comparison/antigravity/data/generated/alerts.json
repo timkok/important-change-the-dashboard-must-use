@@ -1,47 +1,11 @@
 [
   {
-    "id": "safety_topic_spike-1",
-    "type": "Safety topic spike",
-    "severity": "High",
-    "company": "Both",
-    "title": "Topic Spike: Side effects / safety",
-    "detail": "There are 3 mentions of Side effects / safety in the last 7 days.",
-    "date": "2026-05-24"
-  },
-  {
-    "id": "pricing/access_topic_spike-2",
-    "type": "Pricing/access topic spike",
+    "id": "novo_sov_exceeds_lilly_by_more_than_10_percentage_points-1",
+    "type": "Novo SOV exceeds Lilly by more than 10 percentage points",
     "severity": "Medium",
-    "company": "Both",
-    "title": "Topic Spike: Drug pricing / insurance / access",
-    "detail": "There are 8 mentions of Drug pricing / insurance / access in the last 7 days.",
-    "date": "2026-05-24"
-  },
-  {
-    "id": "legal/regulatory_topic_spike-3",
-    "type": "Legal/regulatory topic spike",
-    "severity": "High",
-    "company": "Both",
-    "title": "Topic Spike: Legal / regulatory",
-    "detail": "There are 7 mentions of Legal / regulatory in the last 7 days.",
-    "date": "2026-05-24"
-  },
-  {
-    "id": "tier_1_article_published-4",
-    "type": "Tier 1 article published",
-    "severity": "Medium",
-    "company": "Eli Lilly",
-    "title": "Tier 1 Coverage: theguardian.com",
-    "detail": "Published 'New weight - loss shot appears to outperform other obesity drugs on market' covering Eli Lilly.",
-    "date": "2026-05-24"
-  },
-  {
-    "id": "pipeline_term_spike:_orforglipron_or_retatrutide-5",
-    "type": "Pipeline term spike: orforglipron or retatrutide",
-    "severity": "Medium",
-    "company": "Eli Lilly",
-    "title": "Next-Gen Pipeline Coverage Spike",
-    "detail": "Next-gen pipeline ingredients (orforglipron, retatrutide) were mentioned 21 times in the last 7 days.",
+    "company": "Novo Nordisk",
+    "title": "Novo Nordisk SOV Dominance",
+    "detail": "Novo Nordisk has a 100.0% share of voice vs Eli Lilly's 0.0% in recent coverage.",
     "date": "2026-05-24"
   }
 ]

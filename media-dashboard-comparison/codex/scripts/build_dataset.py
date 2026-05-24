@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import os
+import time
 import json
 from collections import Counter, defaultdict
 from datetime import datetime, timedelta, timezone
@@ -132,13 +134,32 @@ def generate_alerts(mentions: list[dict[str, Any]], daily_counts: list[dict[str,
 
 
 def main() -> int:
+    start_time = time.time()
     warnings: list[str] = []
     gdelt_mentions: list[dict[str, Any]] = []
+    
+    # Respect environmental range settings
+    try:
+        total_days = int(os.environ.get("LOOKBACK_DAYS", os.environ.get("GDELT_DAYS", "90")))
+    except ValueError:
+        total_days = 90
+        
     coverage_end = datetime.now(timezone.utc).date()
-    coverage_start = coverage_end - timedelta(days=90)
+    coverage_start = coverage_end - timedelta(days=total_days)
+
+    timeout_limit = int(os.environ.get("PIPELINE_TIMEOUT_SECONDS", "180"))
+    timed_out = False
 
     for company, definition in QUERY_DEFINITIONS.items():
-        for start, end in date_windows():
+        if timed_out:
+            break
+        for start, end in date_windows(days=total_days):
+            # Check for global time limit
+            if time.time() - start_time > timeout_limit:
+                warnings.append("Pipeline GDELT fetch phase reached global timeout limit. Proceeding with partial/empty dataset.")
+                timed_out = True
+                break
+                
             articles, window_warnings = fetch_gdelt_window(definition["query"], start, end)
             warnings.extend(window_warnings)
             for article in articles:

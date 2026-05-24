@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+import time
 import json
 from collections import Counter, defaultdict
 from datetime import datetime, timedelta, timezone
@@ -149,7 +150,6 @@ def generate_alerts(mentions: list[dict[str, Any]], daily_counts: list[dict[str,
                 f"Published '{item['title']}' covering {item['company']}.",
                 item["company"]
             )
-            # Log only the first one to avoid alert spam
             break
 
     # Rule 4: Share of Voice Leaderboard Changes (+10% difference)
@@ -195,22 +195,34 @@ def generate_alerts(mentions: list[dict[str, Any]], daily_counts: list[dict[str,
     return alerts
 
 def main() -> int:
+    start_time = time.time()
     warnings: list[str] = []
     raw_mentions: list[dict[str, Any]] = []
     
-    # Check GDELT days override via environment variable
+    # Respect environmental range settings
     try:
-        total_days = int(os.environ.get("GDELT_DAYS", "90"))
+        total_days = int(os.environ.get("LOOKBACK_DAYS", os.environ.get("GDELT_DAYS", "90")))
     except ValueError:
         total_days = 90
         
     coverage_end = datetime.now(timezone.utc).date()
     coverage_start = coverage_end - timedelta(days=total_days)
     
+    timeout_limit = int(os.environ.get("PIPELINE_TIMEOUT_SECONDS", "180"))
+    timed_out = False
+
     # Fetch GDELT data
     windows = date_windows(days=total_days, window_days=10)
     for company, definition in QUERY_DEFINITIONS.items():
+        if timed_out:
+            break
         for start, end in windows:
+            # Check for global time limit
+            if time.time() - start_time > timeout_limit:
+                warnings.append("Pipeline GDELT fetch phase reached global timeout limit. Proceeding with partial/empty dataset.")
+                timed_out = True
+                break
+                
             articles, window_warnings = fetch_gdelt_window(definition["query"], start, end)
             warnings.extend(window_warnings)
             

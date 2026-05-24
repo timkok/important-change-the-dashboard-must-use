@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-05-24T15:22:33.980855+00:00",
-  "coverageStart": "2026-05-10",
+  "lastUpdated": "2026-05-24T15:39:19.402955+00:00",
+  "coverageStart": "2026-05-17",
   "coverageEnd": "2026-05-24",
-  "recordCount": 179,
+  "recordCount": 15,
   "sourcesUsed": [
     "GDELT"
   ],
@@ -18,7 +18,9 @@
     "sourceAuthority",
     "engagement"
   ],
-  "warnings": [],
+  "warnings": [
+    "GDELT fetch failed for window 2026-05-17 to 2026-05-24: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=15)"
+  ],
   "queryDefinitions": {
     "Novo Nordisk": {
       "query": "(\"Novo Nordisk\" OR Ozempic OR Wegovy OR Rybelsus OR semaglutide OR \"oral semaglutide\")",
@@ -30,11 +32,11 @@
     }
   },
   "deduplicationSummary": {
-    "originalRecordCount": 200,
-    "duplicatesRemoved": 21,
-    "dedupedByURL": 21,
+    "originalRecordCount": 15,
+    "duplicatesRemoved": 0,
+    "dedupedByURL": 0,
     "dedupedByTitleDateDomain": 0,
-    "finalRecordCount": 179
+    "finalRecordCount": 15
   },
   "version": "antigravity"
 }
