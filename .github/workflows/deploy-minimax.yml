@@ -1,0 +1,64 @@
+name: Deploy MiniMax media dashboard
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "minimax-version/**"
+      - ".github/workflows/deploy-minimax.yml"
+  workflow_dispatch:
+  schedule:
+    - cron: "0 11 * * *"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "minimax-pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install MiniMax dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r minimax-version/scripts/requirements.txt
+
+      - name: Build MiniMax dataset
+        run: python -u minimax-version/scripts/build_dataset.py
+        env:
+          LOOKBACK_DAYS: "7"
+          MAX_RECORDS_PER_COMPANY: "50"
+          PIPELINE_TIMEOUT_SECONDS: "180"
+
+      - name: Validate MiniMax generated data
+        run: python minimax-version/scripts/validate_generated_data.py
+
+      - name: Validate MiniMax dashboard paths
+        run: python minimax-version/scripts/validate_dashboard_paths.py
+
+      - name: Ensure nojekyll
+        run: touch .nojekyll
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

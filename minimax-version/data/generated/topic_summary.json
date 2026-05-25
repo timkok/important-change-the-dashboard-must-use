@@ -1,0 +1,44 @@
+[
+  {
+    "company": "Eli Lilly",
+    "topic": "Weight loss efficacy",
+    "mentions": 6,
+    "averageSentimentScore": 0.0,
+    "reach": 800000
+  },
+  {
+    "company": "Eli Lilly",
+    "topic": "GLP-1 market competition",
+    "mentions": 2,
+    "averageSentimentScore": 0.0,
+    "reach": 200000
+  },
+  {
+    "company": "Eli Lilly",
+    "topic": "Other",
+    "mentions": 2,
+    "averageSentimentScore": 0.0,
+    "reach": 200000
+  },
+  {
+    "company": "Novo Nordisk",
+    "topic": "GLP-1 market competition",
+    "mentions": 7,
+    "averageSentimentScore": -0.129,
+    "reach": 700000
+  },
+  {
+    "company": "Novo Nordisk",
+    "topic": "Weight loss efficacy",
+    "mentions": 4,
+    "averageSentimentScore": -0.113,
+    "reach": 400000
+  },
+  {
+    "company": "Novo Nordisk",
+    "topic": "Other",
+    "mentions": 2,
+    "averageSentimentScore": 0.0,
+    "reach": 200000
+  }
+]

@@ -1,0 +1,683 @@
+[
+  {
+    "id": "316e2dcb88be97d05e212875",
+    "date": "2026-05-25",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Wegovy",
+    "channel": "News",
+    "source": "koreaherald.com",
+    "sourceDomain": "koreaherald.com",
+    "sourceTier": "Other",
+    "title": "  Natural Wegovy  egg recipe stirs weight - loss buzz in Korea",
+    "snippet": "",
+    "url": "https://www.koreaherald.com/article/10755440",
+    "topic": "GLP-1 market competition",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Wegovy"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "23b23e1acc75aeba109b4eaa",
+    "date": "2026-05-25",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Wegovy",
+    "channel": "News",
+    "source": "gulfnews.com",
+    "sourceDomain": "gulfnews.com",
+    "sourceTier": "Other",
+    "title": "Weight loss pills : Do they really work ? UAE doctors explain Wegovy , GLP - 1 medications , benefits and risks",
+    "snippet": "",
+    "url": "https://gulfnews.com/lifestyle/weight-loss-pills-do-they-really-work-uae-doctors-explain-wegovy-glp-1-medications-benefits-and-risks-1.500551949",
+    "topic": "Weight loss efficacy",
+    "sentiment": "Negative",
+    "sentimentScore": -0.45,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Wegovy"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "43c9cb5cc5e368a8cd1d44ef",
+    "date": "2026-05-25",
+    "company": "Eli Lilly",
+    "matchedEntity": "Eli Lilly",
+    "channel": "News",
+    "source": "gdnonline.com",
+    "sourceDomain": "gdnonline.com",
+    "sourceTier": "Other",
+    "title": "Health : Eli Lilly says next - gen obesity drug helps patients lose 28 % of body weight",
+    "snippet": "",
+    "url": "https://www.gdnonline.com:443/Details/1395801",
+    "topic": "Weight loss efficacy",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Eli Lilly",
+      "Lilly"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "ef1d490c1cc3b39e54395a98",
+    "date": "2026-05-24",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "dailymail.com",
+    "sourceDomain": "dailymail.com",
+    "sourceTier": "Other",
+    "title": "I lost five pounds in six weeks when I discovered  Nature Ozempic : All the benefits of the jabs with NONE of the side effects - and I just stir it into my morning coffee ... by BEATRICE AIDIN",
+    "snippet": "",
+    "url": "https://www.dailymail.com/lifestyle/fitness-wellbeing/article-15844765/Natures-Ozempic-benefits-jabs-coffee-BEATRICE-AIDIN.html",
+    "topic": "GLP-1 market competition",
+    "sentiment": "Negative",
+    "sentimentScore": -0.45,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "cfc80270b036226e261673ce",
+    "date": "2026-05-24",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "miragenews.com",
+    "sourceDomain": "miragenews.com",
+    "sourceTier": "Other",
+    "title": "AI Uncovers Hidden Ozempic Side Effects on Reddit",
+    "snippet": "",
+    "url": "https://www.miragenews.com/ai-uncovers-hidden-ozempic-side-effects-on-1679455/",
+    "topic": "GLP-1 market competition",
+    "sentiment": "Negative",
+    "sentimentScore": -0.45,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "8719ba09c67593e142d1b9a8",
+    "date": "2026-05-24",
+    "company": "Eli Lilly",
+    "matchedEntity": "Eli Lilly",
+    "channel": "News",
+    "source": "theweek.in",
+    "sourceDomain": "theweek.in",
+    "sourceTier": "Other",
+    "title": "How Eli Lilly new weight - loss drug achieves up to 30 per cent weight loss - The Week",
+    "snippet": "",
+    "url": "https://www.theweek.in/news/health/2026/05/24/how-eli-lillys-new-weight-loss-drug-achieves-up-to-30-per-cent-weight-loss.html",
+    "topic": "Weight loss efficacy",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Eli Lilly"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "9d1e66a2d366407d0fff3f3b",
+    "date": "2026-05-23",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Novo Nordisk",
+    "channel": "News",
+    "source": "finanznachrichten.de",
+    "sourceDomain": "finanznachrichten.de",
+    "sourceTier": "Other",
+    "title": "CHMP Issues Positive Opinion On Novo Nordisk Wegovy 7 . 2 Mg For Obesity",
+    "snippet": "",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-05/68580039-chmp-issues-positive-opinion-on-novo-nordisk-s-wegovy-7-2-mg-for-obesity-020.htm",
+    "topic": "Weight loss efficacy",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Novo Nordisk",
+      "Wegovy",
+      "Novo"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "6210eec58133af81c9d67935",
+    "date": "2026-05-23",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Novo Nordisk",
+    "channel": "News",
+    "source": "rttnews.com",
+    "sourceDomain": "rttnews.com",
+    "sourceTier": "Other",
+    "title": "CHMP Issues Positive Opinion On Novo Nordisk Wegovy 7 . 2 Mg For Obesity",
+    "snippet": "",
+    "url": "https://www.rttnews.com/3654932/chmp-issues-positive-opinion-on-novo-nordisk-s-wegovy-7-2-mg-for-obesity.aspx",
+    "topic": "Weight loss efficacy",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Novo Nordisk",
+      "Wegovy",
+      "Novo"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "12ce76c34bdb77d5341bf297",
+    "date": "2026-05-23",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Novo Nordisk",
+    "channel": "News",
+    "source": "finanzen.ch",
+    "sourceDomain": "finanzen.ch",
+    "sourceTier": "Other",
+    "title": "CHMP Issues Positive Opinion On Novo Nordisk Wegovy 7 . 2 Mg For Obesity",
+    "snippet": "",
+    "url": "https://www.finanzen.ch/nachrichten/aktien/chmp-issues-positive-opinion-on-novo-nordisks-wegovy-7-2-mg-for-obesity-1036190073",
+    "topic": "Weight loss efficacy",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Novo Nordisk",
+      "Wegovy",
+      "Novo"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "466e7d948bfb3965bb8fa680",
+    "date": "2026-05-23",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Novo Nordisk",
+    "channel": "News",
+    "source": "economictimes.indiatimes.com",
+    "sourceDomain": "economictimes.indiatimes.com",
+    "sourceTier": "Other",
+    "title": "Novo Nordisk uses AI to fast - track drug launches , expand India role",
+    "snippet": "",
+    "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/novo-nordisk-uses-ai-to-fast-track-drug-launches-expand-india-role/articleshow/131278271.cms",
+    "topic": "Other",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Novo Nordisk"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "71184e158d3470f35c903005",
+    "date": "2026-05-23",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Novo Nordisk",
+    "channel": "News",
+    "source": "dailypolitical.com",
+    "sourceDomain": "dailypolitical.com",
+    "sourceTier": "Other",
+    "title": "Novo Nordisk A / S $NVO Shares Purchased by Markel Group Inc . ",
+    "snippet": "",
+    "url": "https://www.dailypolitical.com/2026/05/23/novo-nordisk-a-s-nvo-shares-purchased-by-markel-group-inc.html",
+    "topic": "Other",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Novo Nordisk"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "3e08f73a43e73809893cdb24",
+    "date": "2026-05-23",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "muskokaregion.com",
+    "sourceDomain": "muskokaregion.com",
+    "sourceTier": "Other",
+    "title": "Digital prescriptions for generic Ozempic ready in Ontario",
+    "snippet": "",
+    "url": "https://www.muskokaregion.com/news/ontario-generic-ozempic-apotex-digital-prescriptions/article_2187ad4c-bde5-5988-a6b4-15e77e0ec997.html",
+    "topic": "GLP-1 market competition",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "ce056724eb4921cb8d044482",
+    "date": "2026-05-23",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "northumberlandnews.com",
+    "sourceDomain": "northumberlandnews.com",
+    "sourceTier": "Other",
+    "title": "Digital prescriptions for generic Ozempic ready in Ontario",
+    "snippet": "",
+    "url": "https://www.northumberlandnews.com/news/ontario-generic-ozempic-apotex-digital-prescriptions/article_bc0c41f0-03f8-5ee0-b3e7-9b9598021fde.html",
+    "topic": "GLP-1 market competition",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "b40c1609aa55524ae29c3dbb",
+    "date": "2026-05-23",
+    "company": "Eli Lilly",
+    "matchedEntity": "Eli Lilly",
+    "channel": "News",
+    "source": "kpq.com",
+    "sourceDomain": "kpq.com",
+    "sourceTier": "Other",
+    "title": "How Eli Lilly Retatrutide Compares To Existing Weight Loss Drugs",
+    "snippet": "",
+    "url": "https://kpq.com/ixp/1135/p/retatrutide-weight-loss-drug-washington/",
+    "topic": "Weight loss efficacy",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Eli Lilly",
+      "retatrutide",
+      "Lilly"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "a5ae596cf0d49a881d191fe7",
+    "date": "2026-05-23",
+    "company": "Eli Lilly",
+    "matchedEntity": "Mounjaro",
+    "channel": "News",
+    "source": "dailymail.com",
+    "sourceDomain": "dailymail.com",
+    "sourceTier": "Other",
+    "title": "I lost three stone on Mounjaro and got down to a perfect size 10 ... but the jabs made my hair fall out and left me with bald patches . Here exactly how I overcame the side - effect and now look better than ever : NADINE DORRIES",
+    "snippet": "",
+    "url": "https://www.dailymail.com/lifestyle/beauty/article-15327907/lost-stone-Mounjaro-size-10-jabs-hair-fall-bald-patches-NADINE-DORRIES.html",
+    "topic": "GLP-1 market competition",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Mounjaro"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "68fd547d753f46fbef522c38",
+    "date": "2026-05-23",
+    "company": "Eli Lilly",
+    "matchedEntity": "Eli Lilly",
+    "channel": "News",
+    "source": "tickerreport.com",
+    "sourceDomain": "tickerreport.com",
+    "sourceTier": "Other",
+    "title": "Evoke Wealth LLC Boosts Stake in Eli Lilly and Company $LLY",
+    "snippet": "",
+    "url": "https://www.tickerreport.com/banking-finance/13452105/evoke-wealth-llc-boosts-stake-in-eli-lilly-and-company-lly.html",
+    "topic": "Other",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Eli Lilly"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "e5694e6cf8b4ca55d611d12a",
+    "date": "2026-05-23",
+    "company": "Eli Lilly",
+    "matchedEntity": "Eli Lilly",
+    "channel": "Finance Media",
+    "source": "finance.yahoo.com",
+    "sourceDomain": "finance.yahoo.com",
+    "sourceTier": "Finance",
+    "title": "Eli Lilly ( LLY ) Announces Positive Phase 3 Results for Obesity Treatment Retatrutide",
+    "snippet": "",
+    "url": "https://finance.yahoo.com/sectors/healthcare/articles/eli-lilly-lly-announces-positive-120123718.html",
+    "topic": "Weight loss efficacy",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 300000,
+    "engagement": 0,
+    "sourceAuthority": 70,
+    "matchedKeywords": [
+      "Eli Lilly",
+      "retatrutide",
+      "Lilly"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "c1a016b45024dac911678236",
+    "date": "2026-05-23",
+    "company": "Eli Lilly",
+    "matchedEntity": "Eli Lilly",
+    "channel": "News",
+    "source": "97rockonline.com",
+    "sourceDomain": "97rockonline.com",
+    "sourceTier": "Other",
+    "title": "How Eli Lilly Retatrutide Compares To Existing Weight Loss Drugs",
+    "snippet": "",
+    "url": "https://97rockonline.com/ixp/1135/p/retatrutide-weight-loss-drug-washington/",
+    "topic": "Weight loss efficacy",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Eli Lilly",
+      "retatrutide",
+      "Lilly"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "4a13d7cd08e95ae96b897124",
+    "date": "2026-05-23",
+    "company": "Eli Lilly",
+    "matchedEntity": "Eli Lilly",
+    "channel": "News",
+    "source": "religionnews.com",
+    "sourceDomain": "religionnews.com",
+    "sourceTier": "Other",
+    "title": "Eli Lilly sues church leaders for alleged $200M  sham  drug program",
+    "snippet": "",
+    "url": "https://religionnews.com/2026/05/22/cogic-leaders-sued-for-alleged-200-million-sham-prescription-drug-program/",
+    "topic": "Other",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Eli Lilly"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "b46084247770d2f8e1c285fa",
+    "date": "2026-05-22",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "parrysound.com",
+    "sourceDomain": "parrysound.com",
+    "sourceTier": "Other",
+    "title": "Digital prescriptions for generic Ozempic ready in Ontario",
+    "snippet": "",
+    "url": "https://www.parrysound.com/news/ontario-generic-ozempic-apotex-digital-prescriptions/article_07c2b86f-7442-5e1a-bfab-5fe5a116c851.html",
+    "topic": "GLP-1 market competition",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "feed106b0147bad033b36a63",
+    "date": "2026-05-22",
+    "company": "Novo Nordisk",
+    "matchedEntity": "Ozempic",
+    "channel": "News",
+    "source": "niagarathisweek.com",
+    "sourceDomain": "niagarathisweek.com",
+    "sourceTier": "Other",
+    "title": "Digital prescriptions for generic Ozempic ready in Ontario",
+    "snippet": "",
+    "url": "https://www.niagarathisweek.com/news/ontario-generic-ozempic-apotex-digital-prescriptions/article_03349d14-7e61-5b7a-9968-a1dfbc97aab8.html",
+    "topic": "GLP-1 market competition",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Ozempic"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "006db82f0b2e542517500abe",
+    "date": "2026-05-22",
+    "company": "Eli Lilly",
+    "matchedEntity": "Eli Lilly",
+    "channel": "News",
+    "source": "proactiveinvestors.com",
+    "sourceDomain": "proactiveinvestors.com",
+    "sourceTier": "Other",
+    "title": "Novo Nordisk faces new GLP - 1 rival as Eli Lilly triple agonist sets weight - loss record",
+    "snippet": "",
+    "url": "https://www.proactiveinvestors.com/companies/news/1092762/novo-nordisk-faces-new-glp-1-rival-as-eli-lilly-s-triple-agonist-sets-weight-loss-record-1092762.html",
+    "topic": "GLP-1 market competition",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Eli Lilly"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  },
+  {
+    "id": "b764b8c8a080473ee587d1c7",
+    "date": "2026-05-22",
+    "company": "Eli Lilly",
+    "matchedEntity": "Eli Lilly",
+    "channel": "News",
+    "source": "benzinga.com",
+    "sourceDomain": "benzinga.com",
+    "sourceTier": "Other",
+    "title": "Eli Lilly Highlights Positive Foundayo Data At Obesity Conference - Eli Lilly ( NYSE : LLY ) ",
+    "snippet": "",
+    "url": "https://www.benzinga.com/markets/equities/26/05/52751413/eli-lilly-highlights-positive-late-stage-foundayo-data-at-obesity-conference",
+    "topic": "Weight loss efficacy",
+    "sentiment": "Neutral",
+    "sentimentScore": 0.0,
+    "reach": 100000,
+    "engagement": 0,
+    "sourceAuthority": 45,
+    "matchedKeywords": [
+      "Eli Lilly",
+      "Lilly"
+    ],
+    "rawSource": "GDELT",
+    "language": "English",
+    "country": null,
+    "isProxyMetrics": true,
+    "dataQualityNotes": [
+      "GDELT does not provide true impressions or engagement; reach and sourceAuthority are source-tier proxies."
+    ]
+  }
+]

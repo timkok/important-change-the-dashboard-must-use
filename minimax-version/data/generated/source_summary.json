@@ -1,0 +1,200 @@
+[
+  {
+    "source": "dailymail.com",
+    "mentions": 2,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 200000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "koreaherald.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "gulfnews.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "gdnonline.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "miragenews.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "theweek.in",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "finanznachrichten.de",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "rttnews.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "finanzen.ch",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "economictimes.indiatimes.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "dailypolitical.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "muskokaregion.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "northumberlandnews.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "kpq.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "tickerreport.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "finance.yahoo.com",
+    "mentions": 1,
+    "sourceTier": "Finance",
+    "channel": "Finance Media",
+    "reach": 300000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "97rockonline.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "religionnews.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "parrysound.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "niagarathisweek.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "proactiveinvestors.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  },
+  {
+    "source": "benzinga.com",
+    "mentions": 1,
+    "sourceTier": "Other",
+    "channel": "News",
+    "reach": 100000,
+    "engagement": 0,
+    "isProxyMetrics": true
+  }
+]

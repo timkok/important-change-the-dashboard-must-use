@@ -1,0 +1,72 @@
+[
+  {
+    "date": "2026-05-19",
+    "company": "Eli Lilly",
+    "count": 0
+  },
+  {
+    "date": "2026-05-19",
+    "company": "Novo Nordisk",
+    "count": 0
+  },
+  {
+    "date": "2026-05-20",
+    "company": "Eli Lilly",
+    "count": 0
+  },
+  {
+    "date": "2026-05-20",
+    "company": "Novo Nordisk",
+    "count": 0
+  },
+  {
+    "date": "2026-05-21",
+    "company": "Eli Lilly",
+    "count": 0
+  },
+  {
+    "date": "2026-05-21",
+    "company": "Novo Nordisk",
+    "count": 0
+  },
+  {
+    "date": "2026-05-22",
+    "company": "Eli Lilly",
+    "count": 2
+  },
+  {
+    "date": "2026-05-22",
+    "company": "Novo Nordisk",
+    "count": 2
+  },
+  {
+    "date": "2026-05-23",
+    "company": "Eli Lilly",
+    "count": 6
+  },
+  {
+    "date": "2026-05-23",
+    "company": "Novo Nordisk",
+    "count": 7
+  },
+  {
+    "date": "2026-05-24",
+    "company": "Eli Lilly",
+    "count": 1
+  },
+  {
+    "date": "2026-05-24",
+    "company": "Novo Nordisk",
+    "count": 2
+  },
+  {
+    "date": "2026-05-25",
+    "company": "Eli Lilly",
+    "count": 1
+  },
+  {
+    "date": "2026-05-25",
+    "company": "Novo Nordisk",
+    "count": 2
+  }
+]
